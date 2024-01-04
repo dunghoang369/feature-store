@@ -1,0 +1,66 @@
+[2023-10-11T07:55:11.557+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: docker.train_task manual__2023-10-11T07:55:10.771331+00:00 [queued]>
+[2023-10-11T07:55:11.562+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: docker.train_task manual__2023-10-11T07:55:10.771331+00:00 [queued]>
+[2023-10-11T07:55:11.562+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-10-11T07:55:11.568+0000] {taskinstance.py:1380} INFO - Executing <Task(DockerOperator): train_task> on 2023-10-11 07:55:10.771331+00:00
+[2023-10-11T07:55:11.573+0000] {standard_task_runner.py:57} INFO - Started process 723 to run task
+[2023-10-11T07:55:11.576+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'docker', 'train_task', 'manual__2023-10-11T07:55:10.771331+00:00', '--job-id', '1453', '--raw', '--subdir', 'DAGS_FOLDER/lightgbm/docker.py', '--cfg-path', '/tmp/tmpdokusibh']
+[2023-10-11T07:55:11.576+0000] {standard_task_runner.py:85} INFO - Job 1453: Subtask train_task
+[2023-10-11T07:55:11.601+0000] {task_command.py:415} INFO - Running <TaskInstance: docker.train_task manual__2023-10-11T07:55:10.771331+00:00 [running]> on host 088fd7a9bc48
+[2023-10-11T07:55:11.645+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='docker' AIRFLOW_CTX_TASK_ID='train_task' AIRFLOW_CTX_EXECUTION_DATE='2023-10-11T07:55:10.771331+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-11T07:55:10.771331+00:00'
+[2023-10-11T07:55:11.673+0000] {docker.py:337} INFO - Starting docker container from image fullstackdatascience/***-lgb-stage:0.0.1
+[2023-10-11T07:55:11.675+0000] {docker.py:345} WARNING - Using remote engine or docker-in-docker and mounting temporary volume from host is not supported. Falling back to `mount_tmp_dir=False` mode. You can set `mount_tmp_dir` parameter to False to disable mounting and remove the warning
+[2023-10-11T07:55:12.518+0000] {docker.py:406} INFO - Traceback (most recent call last):
+  File "/training/code/train.py", line 3, in <module>
+[2023-10-11T07:55:12.518+0000] {docker.py:406} INFO - import lightgbm as lgb
+  File "/usr/local/lib/python3.9/site-packages/lightgbm/__init__.py", line 8, in <module>
+[2023-10-11T07:55:12.519+0000] {docker.py:406} INFO - from .basic import Booster, Dataset, Sequence, register_logger
+  File "/usr/local/lib/python3.9/site-packages/lightgbm/basic.py", line 226, in <module>
+[2023-10-11T07:55:12.519+0000] {docker.py:406} INFO - _LIB = _load_lib()
+  File "/usr/local/lib/python3.9/site-packages/lightgbm/basic.py", line 211, in _load_lib
+[2023-10-11T07:55:12.519+0000] {docker.py:406} INFO - lib = ctypes.cdll.LoadLibrary(lib_path[0])
+  File "/usr/local/lib/python3.9/ctypes/__init__.py", line 452, in LoadLibrary
+[2023-10-11T07:55:12.519+0000] {docker.py:406} INFO - return self._dlltype(name)
+  File "/usr/local/lib/python3.9/ctypes/__init__.py", line 374, in __init__
+[2023-10-11T07:55:12.519+0000] {docker.py:406} INFO - self._handle = _dlopen(self._name, mode)
+OSError: libgomp.so.1: cannot open shared object file: No such file or directory
+[2023-10-11T07:55:12.808+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 268, in _raise_for_status
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://docker-proxy:2375/v1.43/containers/create?name=***-lgb-stage
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 342, in _run_image
+    return self._run_image_with_mounts([*self.mounts, tmp_mount], add_tmp_variable=True)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 369, in _run_image_with_mounts
+    self.container = self.cli.create_container(
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/container.py", line 431, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/container.py", line 448, in create_container_from_config
+    return self._result(res, True)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 274, in _result
+    self._raise_for_status(response)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 270, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 400 Client Error for http://docker-proxy:2375/v1.43/containers/create?name=airflow-lgb-stage: Bad Request ("invalid mount config for type "bind": bind source path does not exist: /tmp/airflowtmpjr2bcp1o")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 479, in execute
+    return self._run_image()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 351, in _run_image
+    return self._run_image_with_mounts(self.mounts, add_tmp_variable=False)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 414, in _run_image_with_mounts
+    raise DockerContainerFailedException(f"Docker container failed: {result!r}", logs=log_lines)
+airflow.providers.docker.exceptions.DockerContainerFailedException: Docker container failed: {'StatusCode': 1}
+[2023-10-11T07:55:12.811+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=docker, task_id=train_task, execution_date=20231011T075510, start_date=20231011T075511, end_date=20231011T075512
+[2023-10-11T07:55:12.816+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 1453 for task train_task (Docker container failed: {'StatusCode': 1}; 723)
+[2023-10-11T07:55:12.829+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-10-11T07:55:12.839+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

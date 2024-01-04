@@ -1,0 +1,22 @@
+[2023-11-10T03:36:49.267+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: docker.train_task manual__2023-11-10T03:36:48.426861+00:00 [queued]>
+[2023-11-10T03:36:49.276+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: docker.train_task manual__2023-11-10T03:36:48.426861+00:00 [queued]>
+[2023-11-10T03:36:49.276+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-11-10T03:36:49.288+0000] {taskinstance.py:1380} INFO - Executing <Task(DockerOperator): train_task> on 2023-11-10 03:36:48.426861+00:00
+[2023-11-10T03:36:49.293+0000] {standard_task_runner.py:57} INFO - Started process 203 to run task
+[2023-11-10T03:36:49.298+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'docker', 'train_task', 'manual__2023-11-10T03:36:48.426861+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/lightgbm/docker.py', '--cfg-path', '/tmp/tmphq_wa_92']
+[2023-11-10T03:36:49.299+0000] {standard_task_runner.py:85} INFO - Job 4: Subtask train_task
+[2023-11-10T03:36:49.344+0000] {task_command.py:415} INFO - Running <TaskInstance: docker.train_task manual__2023-11-10T03:36:48.426861+00:00 [running]> on host 0d7e07f14325
+[2023-11-10T03:36:49.413+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='docker' AIRFLOW_CTX_TASK_ID='train_task' AIRFLOW_CTX_EXECUTION_DATE='2023-11-10T03:36:48.426861+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-10T03:36:48.426861+00:00'
+[2023-11-10T03:36:49.507+0000] {docker.py:337} INFO - Starting docker container from image dunghoang99/***-lgb-stage:0.0.1
+[2023-11-10T03:36:49.560+0000] {docker.py:345} WARNING - Using remote engine or docker-in-docker and mounting temporary volume from host is not supported. Falling back to `mount_tmp_dir=False` mode. You can set `mount_tmp_dir` parameter to False to disable mounting and remove the warning
+[2023-11-10T03:37:03.623+0000] {docker.py:406} INFO - Loading data...
+Starting training...
+Training until validation scores don't improve for 5 rounds
+Did not meet early stopping. Best iteration is:
+[20]	valid_0's l2: 0.198063	valid_0's l1: 0.431129
+Saving model...
+Starting predicting...
+The RMSE of prediction is: 0.4450426449744025
+[2023-11-10T03:37:03.916+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=docker, task_id=train_task, execution_date=20231110T033648, start_date=20231110T033649, end_date=20231110T033703
+[2023-11-10T03:37:03.958+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-10T03:37:03.971+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

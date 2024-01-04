@@ -1,0 +1,58 @@
+- name: Create a Compute Engine instance
+  hosts: localhost
+  tasks:
+    - name: create a address
+      gcp_compute_address:
+        name: address-instance
+        region: us-central1
+        project: asr-callcenter
+        auth_kind: serviceaccount
+        service_account_file: ../secrets/asr-callcenter-639fa74dc271.json
+        address: 35.202.131.184
+        state: present
+      register: address
+
+    - name: Start an instance
+      gcp_compute_instance:
+        name: instance-1
+        machine_type: e2-standard-8
+        # Refer to https://cloud.google.com/compute/docs/images/os-details#ubuntu_lts
+        # or use the command `gcloud compute images list --project=ubuntu-os-cloud`
+        zone: us-central1-a
+        project: asr-callcenter
+        # The service account is needed to create the resources
+        auth_kind: serviceaccount
+        service_account_file: ../secrets/asr-callcenter-639fa74dc271.json
+        disks:
+          - auto_delete: true
+            boot: true
+            initialize_params:
+              disk_size_gb: 32
+              source_image: projects/ubuntu-os-cloud/global/images/ubuntu-2204-jammy-v20230727
+        # We use the default network with an external IP for SSH
+        network_interfaces:
+          - network:
+              selfLink: global/networks/default
+            access_configs:
+              - name: External NAT
+                type: ONE_TO_ONE_NAT
+                nat_ip: "{{ address }}"
+        state: present # change to absent to delete the instance
+
+    - name: Create inbound firewall rule for port 8081 and 50000
+      gcp_compute_firewall:
+        name: allow-port-8081-50000
+        network:
+          selfLink: global/networks/default
+        allowed:
+          - ip_protocol: TCP
+            ports:
+              - 8081
+              - 50000
+        source_ranges:
+          - 0.0.0.0/0 # Allow traffic from any source (use a more specific source range for security)
+        direction: INGRESS # Direction from outside to inside, EGRESS is the opposite direction
+        description: Allow incoming traffic on port 30000
+        project: asr-callcenter
+        auth_kind: serviceaccount
+        service_account_file: ../secrets/asr-callcenter-639fa74dc271.json

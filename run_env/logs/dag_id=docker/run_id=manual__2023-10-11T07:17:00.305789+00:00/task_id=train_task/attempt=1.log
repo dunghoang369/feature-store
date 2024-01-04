@@ -1,0 +1,42 @@
+[2023-10-11T07:17:01.242+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: docker.train_task manual__2023-10-11T07:17:00.305789+00:00 [queued]>
+[2023-10-11T07:17:01.247+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: docker.train_task manual__2023-10-11T07:17:00.305789+00:00 [queued]>
+[2023-10-11T07:17:01.248+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-10-11T07:17:01.254+0000] {taskinstance.py:1380} INFO - Executing <Task(DockerOperator): train_task> on 2023-10-11 07:17:00.305789+00:00
+[2023-10-11T07:17:01.260+0000] {standard_task_runner.py:57} INFO - Started process 117 to run task
+[2023-10-11T07:17:01.263+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'docker', 'train_task', 'manual__2023-10-11T07:17:00.305789+00:00', '--job-id', '1442', '--raw', '--subdir', 'DAGS_FOLDER/lightgbm/docker.py', '--cfg-path', '/tmp/tmp1ebhdm7s']
+[2023-10-11T07:17:01.263+0000] {standard_task_runner.py:85} INFO - Job 1442: Subtask train_task
+[2023-10-11T07:17:01.292+0000] {task_command.py:415} INFO - Running <TaskInstance: docker.train_task manual__2023-10-11T07:17:00.305789+00:00 [running]> on host 088fd7a9bc48
+[2023-10-11T07:17:01.340+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='docker' AIRFLOW_CTX_TASK_ID='train_task' AIRFLOW_CTX_EXECUTION_DATE='2023-10-11T07:17:00.305789+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-11T07:17:00.305789+00:00'
+[2023-10-11T07:17:01.371+0000] {docker.py:337} INFO - Starting docker container from image fullstackdatascience/***-lgb-stage:0.0.1
+[2023-10-11T07:17:01.374+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 268, in _raise_for_status
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://docker-proxy:2375/v1.43/containers/create?name=***-lgb-stage
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 479, in execute
+    return self._run_image()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 342, in _run_image
+    return self._run_image_with_mounts([*self.mounts, tmp_mount], add_tmp_variable=True)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 369, in _run_image_with_mounts
+    self.container = self.cli.create_container(
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/container.py", line 431, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/container.py", line 448, in create_container_from_config
+    return self._result(res, True)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 274, in _result
+    self._raise_for_status(response)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 270, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 400 Client Error for http://docker-proxy:2375/v1.43/containers/create?name=airflow-lgb-stage: Bad Request ("invalid mount config for type "bind": bind source path does not exist: /opt/airflow/dags")
+[2023-10-11T07:17:01.379+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=docker, task_id=train_task, execution_date=20231011T071700, start_date=20231011T071701, end_date=20231011T071701
+[2023-10-11T07:17:01.385+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 1442 for task train_task (400 Client Error for http://docker-proxy:2375/v1.43/containers/create?name=airflow-lgb-stage: Bad Request ("invalid mount config for type "bind": bind source path does not exist: /opt/airflow/dags"); 117)
+[2023-10-11T07:17:01.394+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-10-11T07:17:01.405+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

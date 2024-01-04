@@ -1,0 +1,84 @@
+[2023-11-09T08:53:56.417+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: docker.train_task manual__2023-11-09T08:53:55.261418+00:00 [queued]>
+[2023-11-09T08:53:56.427+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: docker.train_task manual__2023-11-09T08:53:55.261418+00:00 [queued]>
+[2023-11-09T08:53:56.427+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-11-09T08:53:56.439+0000] {taskinstance.py:1380} INFO - Executing <Task(DockerOperator): train_task> on 2023-11-09 08:53:55.261418+00:00
+[2023-11-09T08:53:56.444+0000] {standard_task_runner.py:57} INFO - Started process 65 to run task
+[2023-11-09T08:53:56.449+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'docker', 'train_task', 'manual__2023-11-09T08:53:55.261418+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/lightgbm/docker.py', '--cfg-path', '/tmp/tmpgo1kkty8']
+[2023-11-09T08:53:56.450+0000] {standard_task_runner.py:85} INFO - Job 3: Subtask train_task
+[2023-11-09T08:53:56.506+0000] {task_command.py:415} INFO - Running <TaskInstance: docker.train_task manual__2023-11-09T08:53:55.261418+00:00 [running]> on host 6a352b2a1f96
+[2023-11-09T08:53:56.584+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='docker' AIRFLOW_CTX_TASK_ID='train_task' AIRFLOW_CTX_EXECUTION_DATE='2023-11-09T08:53:55.261418+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-09T08:53:55.261418+00:00'
+[2023-11-09T08:53:56.614+0000] {docker.py:463} INFO - Pulling docker image dunghoang99/***-lgb-stage:0.0.1
+[2023-11-09T08:54:05.230+0000] {docker.py:477} INFO - 0.0.1: Pulling from dunghoang99/***-lgb-stage
+[2023-11-09T08:54:05.231+0000] {docker.py:477} INFO - a378f10b3218: Pulling fs layer
+[2023-11-09T08:54:05.231+0000] {docker.py:477} INFO - c11bdfacfd25: Pulling fs layer
+[2023-11-09T08:54:05.231+0000] {docker.py:477} INFO - 8ad08235b1d3: Pulling fs layer
+[2023-11-09T08:54:05.269+0000] {docker.py:477} INFO - 8529ad8df27f: Pulling fs layer
+[2023-11-09T08:54:05.270+0000] {docker.py:477} INFO - b41d32331f87: Pulling fs layer
+[2023-11-09T08:54:05.270+0000] {docker.py:477} INFO - a7362ef6a760: Pulling fs layer
+[2023-11-09T08:54:05.270+0000] {docker.py:477} INFO - 0ee026db77c8: Pulling fs layer
+[2023-11-09T08:54:05.271+0000] {docker.py:477} INFO - 29b866a0951d: Pulling fs layer
+[2023-11-09T08:54:05.271+0000] {docker.py:477} INFO - 5a9cbb6923c5: Pulling fs layer
+[2023-11-09T08:54:05.272+0000] {docker.py:477} INFO - 0ee026db77c8: Waiting
+[2023-11-09T08:54:05.272+0000] {docker.py:477} INFO - 29b866a0951d: Waiting
+[2023-11-09T08:54:05.273+0000] {docker.py:477} INFO - 8529ad8df27f: Waiting
+[2023-11-09T08:54:05.273+0000] {docker.py:477} INFO - b41d32331f87: Waiting
+[2023-11-09T08:54:05.273+0000] {docker.py:477} INFO - a7362ef6a760: Waiting
+[2023-11-09T08:54:05.274+0000] {docker.py:477} INFO - 5a9cbb6923c5: Waiting
+[2023-11-09T08:54:06.565+0000] {docker.py:477} INFO - 8ad08235b1d3: Downloading
+[2023-11-09T08:54:06.700+0000] {docker.py:477} INFO - c11bdfacfd25: Downloading
+[2023-11-09T08:54:07.022+0000] {docker.py:477} INFO - 8ad08235b1d3: Verifying Checksum
+[2023-11-09T08:54:07.022+0000] {docker.py:477} INFO - 8ad08235b1d3: Download complete
+[2023-11-09T08:54:07.239+0000] {docker.py:477} INFO - a378f10b3218: Downloading
+[2023-11-09T08:54:08.346+0000] {docker.py:477} INFO - a378f10b3218: Download complete
+[2023-11-09T08:54:08.365+0000] {docker.py:477} INFO - a378f10b3218: Extracting
+[2023-11-09T08:54:08.438+0000] {docker.py:477} INFO - 8529ad8df27f: Downloading
+[2023-11-09T08:54:08.439+0000] {docker.py:477} INFO - 8529ad8df27f: Verifying Checksum
+[2023-11-09T08:54:08.439+0000] {docker.py:477} INFO - 8529ad8df27f: Download complete
+[2023-11-09T08:54:08.884+0000] {docker.py:477} INFO - c11bdfacfd25: Verifying Checksum
+[2023-11-09T08:54:08.885+0000] {docker.py:477} INFO - c11bdfacfd25: Download complete
+[2023-11-09T08:54:09.507+0000] {docker.py:477} INFO - a378f10b3218: Pull complete
+[2023-11-09T08:54:09.510+0000] {docker.py:477} INFO - c11bdfacfd25: Extracting
+[2023-11-09T08:54:09.637+0000] {docker.py:477} INFO - c11bdfacfd25: Pull complete
+[2023-11-09T08:54:09.641+0000] {docker.py:477} INFO - 8ad08235b1d3: Extracting
+[2023-11-09T08:54:09.940+0000] {docker.py:477} INFO - b41d32331f87: Downloading
+[2023-11-09T08:54:10.053+0000] {docker.py:477} INFO - 8ad08235b1d3: Pull complete
+[2023-11-09T08:54:10.056+0000] {docker.py:477} INFO - 8529ad8df27f: Extracting
+[2023-11-09T08:54:10.070+0000] {docker.py:477} INFO - 8529ad8df27f: Pull complete
+[2023-11-09T08:54:10.476+0000] {docker.py:477} INFO - a7362ef6a760: Downloading
+[2023-11-09T08:54:10.628+0000] {docker.py:477} INFO - b41d32331f87: Verifying Checksum
+[2023-11-09T08:54:10.629+0000] {docker.py:477} INFO - b41d32331f87: Extracting
+[2023-11-09T08:54:10.652+0000] {docker.py:477} INFO - 0ee026db77c8: Downloading
+[2023-11-09T08:54:10.653+0000] {docker.py:477} INFO - 0ee026db77c8: Verifying Checksum
+[2023-11-09T08:54:10.653+0000] {docker.py:477} INFO - 0ee026db77c8: Download complete
+[2023-11-09T08:54:10.857+0000] {docker.py:477} INFO - b41d32331f87: Pull complete
+[2023-11-09T08:54:11.997+0000] {docker.py:477} INFO - 29b866a0951d: Downloading
+[2023-11-09T08:54:11.998+0000] {docker.py:477} INFO - 29b866a0951d: Verifying Checksum
+[2023-11-09T08:54:11.998+0000] {docker.py:477} INFO - 29b866a0951d: Download complete
+[2023-11-09T08:54:13.854+0000] {docker.py:477} INFO - 5a9cbb6923c5: Downloading
+[2023-11-09T08:54:21.611+0000] {docker.py:477} INFO - a7362ef6a760: Verifying Checksum
+[2023-11-09T08:54:21.612+0000] {docker.py:477} INFO - a7362ef6a760: Download complete
+[2023-11-09T08:54:21.612+0000] {docker.py:477} INFO - a7362ef6a760: Extracting
+[2023-11-09T08:54:21.757+0000] {docker.py:477} INFO - a7362ef6a760: Pull complete
+[2023-11-09T08:54:21.760+0000] {docker.py:477} INFO - 0ee026db77c8: Extracting
+[2023-11-09T08:54:21.768+0000] {docker.py:477} INFO - 0ee026db77c8: Pull complete
+[2023-11-09T08:54:21.771+0000] {docker.py:477} INFO - 29b866a0951d: Extracting
+[2023-11-09T08:54:21.778+0000] {docker.py:477} INFO - 29b866a0951d: Pull complete
+[2023-11-09T08:55:03.293+0000] {docker.py:477} INFO - 5a9cbb6923c5: Verifying Checksum
+[2023-11-09T08:55:03.293+0000] {docker.py:477} INFO - 5a9cbb6923c5: Download complete
+[2023-11-09T08:55:03.297+0000] {docker.py:477} INFO - 5a9cbb6923c5: Extracting
+[2023-11-09T08:55:07.278+0000] {docker.py:477} INFO - 5a9cbb6923c5: Pull complete
+[2023-11-09T08:55:07.286+0000] {docker.py:472} INFO - Digest: sha256:e30e9cd0e96e2ad2bd4c3b639557028c760093211ed5d1bbce43e3ad9f0893ce
+[2023-11-09T08:55:07.289+0000] {docker.py:472} INFO - Status: Downloaded newer image for dunghoang99/***-lgb-stage:0.0.1
+[2023-11-09T08:55:07.292+0000] {docker.py:337} INFO - Starting docker container from image dunghoang99/***-lgb-stage:0.0.1
+[2023-11-09T08:55:07.346+0000] {docker.py:345} WARNING - Using remote engine or docker-in-docker and mounting temporary volume from host is not supported. Falling back to `mount_tmp_dir=False` mode. You can set `mount_tmp_dir` parameter to False to disable mounting and remove the warning
+[2023-11-09T08:55:12.249+0000] {docker.py:406} INFO - Loading data...
+Starting training...
+Training until validation scores don't improve for 5 rounds
+Did not meet early stopping. Best iteration is:
+[20]	valid_0's l2: 0.198063	valid_0's l1: 0.431129
+Saving model...
+Starting predicting...
+The RMSE of prediction is: 0.4450426449744025
+[2023-11-09T08:55:12.522+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=docker, task_id=train_task, execution_date=20231109T085355, start_date=20231109T085356, end_date=20231109T085512
+[2023-11-09T08:55:12.560+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-09T08:55:12.578+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

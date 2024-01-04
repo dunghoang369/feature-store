@@ -1,0 +1,17 @@
+[2023-10-11T05:13:01.554+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: python.system_maintenance_task manual__2023-10-11T05:13:00.571044+00:00 [queued]>
+[2023-10-11T05:13:01.558+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: python.system_maintenance_task manual__2023-10-11T05:13:00.571044+00:00 [queued]>
+[2023-10-11T05:13:01.558+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-10-11T05:13:01.564+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): system_maintenance_task> on 2023-10-11 05:13:00.571044+00:00
+[2023-10-11T05:13:01.569+0000] {standard_task_runner.py:57} INFO - Started process 801 to run task
+[2023-10-11T05:13:01.571+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'python', 'system_maintenance_task', 'manual__2023-10-11T05:13:00.571044+00:00', '--job-id', '1429', '--raw', '--subdir', 'DAGS_FOLDER/python.py', '--cfg-path', '/tmp/tmp3er3ee69']
+[2023-10-11T05:13:01.571+0000] {standard_task_runner.py:85} INFO - Job 1429: Subtask system_maintenance_task
+[2023-10-11T05:13:01.597+0000] {task_command.py:415} INFO - Running <TaskInstance: python.system_maintenance_task manual__2023-10-11T05:13:00.571044+00:00 [running]> on host 806ac90253f5
+[2023-10-11T05:13:01.636+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='python' AIRFLOW_CTX_TASK_ID='system_maintenance_task' AIRFLOW_CTX_EXECUTION_DATE='2023-10-11T05:13:00.571044+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-11T05:13:00.571044+00:00'
+[2023-10-11T05:13:01.637+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-10-11T05:13:01.637+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "Install some pypi libs..."']
+[2023-10-11T05:13:01.648+0000] {subprocess.py:86} INFO - Output:
+[2023-10-11T05:13:01.649+0000] {subprocess.py:93} INFO - Install some pypi libs...
+[2023-10-11T05:13:01.649+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-10-11T05:13:01.663+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=python, task_id=system_maintenance_task, execution_date=20231011T051300, start_date=20231011T051301, end_date=20231011T051301
+[2023-10-11T05:13:01.702+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-10-11T05:13:01.718+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,274 @@
+[2023-10-10T17:58:09.723+0000] {processor.py:157} INFO - Started process (PID=114) to work on /opt/airflow/dags/gx.py
+[2023-10-10T17:58:09.723+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T17:58:09.724+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:58:09.724+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T17:58:11.901+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:58:11.900+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T17:58:12.830+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:58:12.830+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T17:58:12.831+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:58:12.831+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T17:58:12.832+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T17:58:12.887+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:58:12.887+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:gx' as access control is unset.
+[2023-10-10T17:58:12.887+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:58:12.887+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T17:58:12.893+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:58:12.893+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T17:58:12.902+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 3.182 seconds
+[2023-10-10T17:58:43.003+0000] {processor.py:157} INFO - Started process (PID=140) to work on /opt/airflow/dags/gx.py
+[2023-10-10T17:58:43.004+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T17:58:43.006+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:58:43.006+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T17:58:44.053+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:58:44.052+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T17:58:44.834+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:58:44.834+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T17:58:44.835+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:58:44.835+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T17:58:44.836+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T17:58:44.849+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:58:44.849+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T17:58:44.856+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:58:44.856+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T17:58:44.864+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 1.863 seconds
+[2023-10-10T17:59:15.112+0000] {processor.py:157} INFO - Started process (PID=166) to work on /opt/airflow/dags/gx.py
+[2023-10-10T17:59:15.113+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T17:59:15.114+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:59:15.114+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T17:59:16.117+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:59:16.117+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T17:59:16.936+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:59:16.936+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T17:59:16.936+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:59:16.936+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T17:59:16.938+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T17:59:16.951+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:59:16.951+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T17:59:16.958+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:59:16.958+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T17:59:16.966+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 1.856 seconds
+[2023-10-10T17:59:47.255+0000] {processor.py:157} INFO - Started process (PID=192) to work on /opt/airflow/dags/gx.py
+[2023-10-10T17:59:47.256+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T17:59:47.257+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:59:47.257+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T17:59:48.345+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:59:48.345+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T17:59:49.148+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:59:49.148+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T17:59:49.149+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:59:49.149+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T17:59:49.150+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T17:59:49.163+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:59:49.163+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T17:59:49.169+0000] {logging_mixin.py:151} INFO - [2023-10-10T17:59:49.169+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T17:59:49.177+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 1.924 seconds
+[2023-10-10T18:00:19.399+0000] {processor.py:157} INFO - Started process (PID=218) to work on /opt/airflow/dags/gx.py
+[2023-10-10T18:00:19.400+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T18:00:19.401+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:00:19.401+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T18:00:20.447+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:00:20.447+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T18:00:21.224+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:00:21.224+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T18:00:21.225+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:00:21.225+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T18:00:21.226+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T18:00:21.239+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:00:21.239+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T18:00:21.246+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:00:21.245+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T18:00:21.253+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 1.856 seconds
+[2023-10-10T18:00:51.535+0000] {processor.py:157} INFO - Started process (PID=244) to work on /opt/airflow/dags/gx.py
+[2023-10-10T18:00:51.536+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T18:00:51.538+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:00:51.538+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T18:00:52.511+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:00:52.511+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T18:00:53.252+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:00:53.252+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T18:00:53.252+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:00:53.252+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T18:00:53.254+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T18:00:53.266+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:00:53.266+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T18:00:53.272+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:00:53.272+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T18:00:53.279+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 1.745 seconds
+[2023-10-10T18:01:23.676+0000] {processor.py:157} INFO - Started process (PID=270) to work on /opt/airflow/dags/gx.py
+[2023-10-10T18:01:23.676+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T18:01:23.678+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:01:23.678+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T18:01:24.666+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:01:24.666+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T18:01:25.439+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:01:25.439+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T18:01:25.440+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:01:25.440+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T18:01:25.441+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T18:01:25.454+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:01:25.454+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T18:01:25.461+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:01:25.461+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T18:01:25.468+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 1.794 seconds
+[2023-10-10T18:01:55.824+0000] {processor.py:157} INFO - Started process (PID=296) to work on /opt/airflow/dags/gx.py
+[2023-10-10T18:01:55.824+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T18:01:55.825+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:01:55.825+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T18:01:56.801+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:01:56.801+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T18:01:57.552+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:01:57.551+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T18:01:57.552+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:01:57.552+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T18:01:57.554+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T18:01:57.566+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:01:57.566+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T18:01:57.572+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:01:57.572+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T18:01:57.580+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 1.759 seconds
+[2023-10-10T18:02:27.967+0000] {processor.py:157} INFO - Started process (PID=322) to work on /opt/airflow/dags/gx.py
+[2023-10-10T18:02:27.968+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T18:02:27.969+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:02:27.969+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T18:02:28.983+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:02:28.983+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T18:02:29.759+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:02:29.759+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T18:02:29.760+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:02:29.760+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T18:02:29.761+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T18:02:29.774+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:02:29.774+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T18:02:29.781+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:02:29.781+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T18:02:29.789+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 1.824 seconds
+[2023-10-10T18:03:00.107+0000] {processor.py:157} INFO - Started process (PID=348) to work on /opt/airflow/dags/gx.py
+[2023-10-10T18:03:00.108+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T18:03:00.109+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:03:00.109+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T18:03:01.076+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:03:01.075+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T18:03:01.846+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:03:01.846+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T18:03:01.847+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:03:01.847+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T18:03:01.848+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T18:03:01.862+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:03:01.862+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T18:03:01.868+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:03:01.868+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T18:03:01.875+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 1.770 seconds
+[2023-10-10T18:03:32.245+0000] {processor.py:157} INFO - Started process (PID=374) to work on /opt/airflow/dags/gx.py
+[2023-10-10T18:03:32.245+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T18:03:32.247+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:03:32.247+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T18:03:33.214+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:03:33.214+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T18:03:33.952+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:03:33.952+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T18:03:33.953+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:03:33.953+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T18:03:33.954+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T18:03:33.966+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:03:33.966+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T18:03:33.972+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:03:33.972+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T18:03:33.980+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 1.737 seconds
+[2023-10-10T18:04:04.380+0000] {processor.py:157} INFO - Started process (PID=407) to work on /opt/airflow/dags/gx.py
+[2023-10-10T18:04:04.381+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T18:04:04.382+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:04:04.382+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T18:04:05.403+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:04:05.402+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T18:04:06.160+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:04:06.160+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T18:04:06.161+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:04:06.161+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T18:04:06.162+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T18:04:06.216+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:04:06.216+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:gx' as access control is unset.
+[2023-10-10T18:04:06.216+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:04:06.216+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T18:04:06.222+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:04:06.222+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T18:04:06.230+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 1.852 seconds
+[2023-10-10T18:04:36.525+0000] {processor.py:157} INFO - Started process (PID=433) to work on /opt/airflow/dags/gx.py
+[2023-10-10T18:04:36.525+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T18:04:36.526+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:04:36.526+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T18:04:37.593+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:04:37.592+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T18:04:38.389+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:04:38.389+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T18:04:38.390+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:04:38.390+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T18:04:38.391+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T18:04:38.404+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:04:38.404+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T18:04:38.411+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:04:38.411+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T18:04:38.418+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 1.896 seconds
+[2023-10-10T18:05:08.700+0000] {processor.py:157} INFO - Started process (PID=459) to work on /opt/airflow/dags/gx.py
+[2023-10-10T18:05:08.701+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T18:05:08.702+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:05:08.702+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T18:05:09.709+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:05:09.709+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T18:05:10.468+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:05:10.468+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T18:05:10.468+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:05:10.468+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T18:05:10.470+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T18:05:10.483+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:05:10.483+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T18:05:10.490+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:05:10.490+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T18:05:10.498+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 1.800 seconds
+[2023-10-10T18:05:40.845+0000] {processor.py:157} INFO - Started process (PID=485) to work on /opt/airflow/dags/gx.py
+[2023-10-10T18:05:40.846+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T18:05:40.847+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:05:40.847+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T18:05:41.831+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:05:41.830+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T18:05:42.594+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:05:42.594+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T18:05:42.594+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:05:42.594+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T18:05:42.596+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T18:05:42.609+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:05:42.609+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T18:05:42.615+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:05:42.615+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T18:05:42.623+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 1.780 seconds
+[2023-10-10T18:06:13.008+0000] {processor.py:157} INFO - Started process (PID=512) to work on /opt/airflow/dags/gx.py
+[2023-10-10T18:06:13.008+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/gx.py for tasks to queue
+[2023-10-10T18:06:13.010+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:06:13.010+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/gx.py
+[2023-10-10T18:06:14.009+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:06:14.008+0000] {warnings.py:109} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103: UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+  warn_incompatible_dep(
+[2023-10-10T18:06:14.776+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:06:14.776+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:12: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  create_table_pg = PostgresOperator(
+[2023-10-10T18:06:14.777+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:06:14.777+0000] {warnings.py:109} WARNING - /opt/airflow/dags/gx.py:40: AirflowProviderDeprecationWarning: This class is deprecated.
+            Please use `airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.
+            Also, you can provide `hook_params={'schema': <database>}`.
+  drop_table_pg = PostgresOperator(
+[2023-10-10T18:06:14.778+0000] {processor.py:839} INFO - DAG(s) dict_keys(['gx']) retrieved from /opt/airflow/dags/gx.py
+[2023-10-10T18:06:14.791+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:06:14.791+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-10T18:06:14.797+0000] {logging_mixin.py:151} INFO - [2023-10-10T18:06:14.797+0000] {dag.py:3696} INFO - Setting next_dagrun for gx to None, run_after=None
+[2023-10-10T18:06:14.805+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/gx.py took 1.799 seconds
