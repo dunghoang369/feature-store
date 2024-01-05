@@ -60,11 +60,7 @@ if __name__ == "__main__":
                 .drop(f"{feature}_vect", feature)
             )
             df.show()
-        # for i in range(df.count()):
-        #     row = df.collect[i]
 
-        # print(df.collect()[0].__getitem__('Pregnancies'))
-        # df.write.parquet(f"diabetes_{str(i+2)}.parquet")
         df.printSchema()
         df.select("Glucose", "BMI", "DiabetesPedigreeFunction", "Pregnancies_normed", "BloodPressure_normed", "SkinThickness_normed", "Insulin_normed", "Age_normed")\
         .write.format("jdbc")\
@@ -75,9 +71,3 @@ if __name__ == "__main__":
         .option("dbtable", "diabetes_test")\
         .save()
         print("Insert table to postgresql")
-
-    # print(os.getenv("POSTGRES_DB"))
-    # print(os.getenv("POSTGRES_USER"))
-    # print(os.getenv("POSTGRES_PASSWORD"))
-    # print(os.getenv("POSTGRES_HOST"))
-    # print(os.getenv("POSTGRES_PORT"))
