@@ -66,16 +66,15 @@ if __name__ == "__main__":
         # print(df.collect()[0].__getitem__('Pregnancies'))
         # df.write.parquet(f"diabetes_{str(i+2)}.parquet")
         df.printSchema()
-        break
-        # df.select("Glucose", "BMI", "DiabetesPedigreeFunction", "Pregnancies_normed", "BloodPressure_normed", "SkinThickness_normed", "Insulin_normed", "Age_normed")\
-        # .write.format("jdbc")\
-        # .option("driver", "org.postgresql.Driver")\
-        # .option("user", os.getenv("POSTGRES_USER"))\
-        # .option("password", os.getenv("POSTGRES_PASSWORD"))\
-        # .option("url", "jdbc:postgresql://127.0.0.1:5432/k6")\
-        # .option("dbtable", "diabetes_test")\
-        # .save()
-        # print("Insert table to postgresql")
+        df.select("Glucose", "BMI", "DiabetesPedigreeFunction", "Pregnancies_normed", "BloodPressure_normed", "SkinThickness_normed", "Insulin_normed", "Age_normed")\
+        .write.format("jdbc")\
+        .option("driver", "org.postgresql.Driver")\
+        .option("user", os.getenv("POSTGRES_USER"))\
+        .option("password", os.getenv("POSTGRES_PASSWORD"))\
+        .option("url", "jdbc:postgresql://127.0.0.1:5432/k6")\
+        .option("dbtable", "diabetes_test")\
+        .save()
+        print("Insert table to postgresql")
 
     # print(os.getenv("POSTGRES_DB"))
     # print(os.getenv("POSTGRES_USER"))
