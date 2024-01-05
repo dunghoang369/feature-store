@@ -19,6 +19,7 @@
 + **PostgreSQL_utils** folder: contain funtions to interact with PostgreSQL such as: create table, insert data to PostgreSQL 
 + **run_env_airflow** folder: enviroment to run airflow service
 + **utils** folder: helper funtions
++ **This repo is implemented on 100GB diabetes data stored on Google Cloud Storage**
 
 ## 1. Installation
 + Tested on Python 3.9.12 (recommended to use a virtual environment such as Conda)
