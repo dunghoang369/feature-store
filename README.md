@@ -20,7 +20,7 @@
 + **run_env_airflow** folder: enviroment to run airflow service
 + **utils** folder: helper funtions
 + **This repo is implemented on 100GB diabetes data stored on Google Cloud Storage**
-
+![](images/gcs.png)
 ## 1. Installation
 + Tested on Python 3.9.12 (recommended to use a virtual environment such as Conda)
 + Install requirements: ```pip install -r requirement.txt```
