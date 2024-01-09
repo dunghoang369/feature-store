@@ -16,11 +16,6 @@ if __name__ == "__main__":
     # The entrypoint to access all functions of Spark
     spark = (
         SparkSession.builder.master("local[*]")
-        .config(
-            "spark.jars",
-            "../jar-files/jars/postgresql-42.6.0.jar",
-        )
-        # .config("spark.some.config.option", "some-value")
         .config("spark.driver.bindAddress", "localhost")
         .config("spark.ui.port", "4050")
         .appName("Python Spark read parquet example")
@@ -62,12 +57,5 @@ if __name__ == "__main__":
             df.show()
 
         df.printSchema()
-        df.select("Glucose", "BMI", "DiabetesPedigreeFunction", "Pregnancies_normed", "BloodPressure_normed", "SkinThickness_normed", "Insulin_normed", "Age_normed")\
-        .write.format("jdbc")\
-        .option("driver", "org.postgresql.Driver")\
-        .option("user", os.getenv("POSTGRES_USER"))\
-        .option("password", os.getenv("POSTGRES_PASSWORD"))\
-        .option("url", "jdbc:postgresql://127.0.0.1:5432/k6")\
-        .option("dbtable", "diabetes_test")\
-        .save()
-        print("Insert table to postgresql")
+        df_pandas = pd.DataFrame(df.toPandas())
+        df_pandas.to_csv("test.csv")
