@@ -1,0 +1,18 @@
+FROM  exoplatform/ubuntu:20.04
+
+WORKDIR /app
+COPY datastream_api.py datastream_api.py
+COPY data_ingestion ./data_ingestion
+
+# Install python3
+RUN apt-get update
+RUN apt-get install -y software-properties-common
+RUN add-apt-repository ppa:deadsnakes/ppa -y
+RUN apt-get install -y python3.8
+RUN ln -s /usr/bin/python3.8 /usr/bin/python
+RUN apt-get install -y python3-pip
+
+# Install OpenJdk Java 11 SDK
+RUN apt-get update && apt-get -y install openjdk-11-jdk-headless && rm -rf /var/lib/apt
+RUN pip install apache-flink==1.17.1
+# ENTRYPOINT ["/usr/local/bin/tini", "--", "/usr/bin/java"]

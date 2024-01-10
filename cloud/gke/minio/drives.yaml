@@ -1,0 +1,9 @@
+version: v1
+nodes:
+    - name: gke-cluster-1-default-pool-41ac1435-xf6f
+      drives:
+        - id: 8:5$A3wtKH6Mq6tN0YtMHG+Qqftee7wBVMGtIBJLMDP8eJ4=
+          name: sda5
+          size: 2147483648
+          make: Google PersistentDisk (Part 5)
+          select: "yes"

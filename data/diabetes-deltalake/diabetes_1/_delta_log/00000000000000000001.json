@@ -1,0 +1,23 @@
+{
+    "add": {
+        "path": "1-19650d6d-dae2-4d85-ac90-4922a28a0710-0.parquet",
+        "size": 34753,
+        "partitionValues": {},
+        "modificationTime": 1698048437085,
+        "dataChange": true,
+        "stats": "{\"numRecords\": 1000, \"minValues\": {\"Pregnancies\": 0, \"Glucose\": 0, \"BloodPressure\": 0, \"SkinThickness\": 0, \"Insulin\": 2, \"BMI\": 0.12741570840289093, \"DiabetesPedigreeFunction\": 0.08026496263954093, \"Age\": 21}, \"maxValues\": {\"Pregnancies\": 17, \"Glucose\": 199, \"BloodPressure\": 122, \"SkinThickness\": 99, \"Insulin\": 844, \"BMI\": 66.84682412348141, \"DiabetesPedigreeFunction\": 2.417510044755698, \"Age\": 81}, \"nullCount\": {\"Pregnancies\": 0, \"Glucose\": 0, \"BloodPressure\": 0, \"SkinThickness\": 0, \"Insulin\": 0, \"BMI\": 0, \"DiabetesPedigreeFunction\": 0, \"Age\": 0}}",
+        "tags": null,
+        "deletionVector": null
+    }
+}
+{
+    "commitInfo": {
+        "timestamp": 1698048437086,
+        "operation": "WRITE",
+        "operationParameters": {
+            "mode": "Append",
+            "partitionBy": "[]"
+        },
+        "clientVersion": "delta-rs.0.15.0"
+    }
+}

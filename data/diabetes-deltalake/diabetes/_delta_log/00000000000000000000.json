@@ -1,0 +1,46 @@
+{
+    "protocol": {
+        "minReaderVersion": 1,
+        "minWriterVersion": 1
+    }
+}
+{
+    "metaData": {
+        "id": "6c8e0484-a9ea-4ed3-9594-aea79b474a63",
+        "name": null,
+        "description": null,
+        "format": {
+            "provider": "parquet",
+            "options": {}
+        },
+        "schemaString": "{\"type\":\"struct\",\"fields\":[{\"name\":\"Pregnancies\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Glucose\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"BloodPressure\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"SkinThickness\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Insulin\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"BMI\",\"type\":\"double\",\"nullable\":true,\"metadata\":{}},{\"name\":\"DiabetesPedigreeFunction\",\"type\":\"double\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Age\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Outcome\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}}]}",
+        "partitionColumns": [],
+        "createdTime": 1698048346628,
+        "configuration": {}
+    }
+}
+{
+    "add": {
+        "path": "0-80a992a1-6933-4ab4-ab89-384075fc5cb1-0.parquet",
+        "size": 18163,
+        "partitionValues": {},
+        "modificationTime": 1698048346627,
+        "dataChange": true,
+        "stats": "{\"numRecords\": 768, \"minValues\": {\"Pregnancies\": 0, \"Glucose\": 0, \"BloodPressure\": 0, \"SkinThickness\": 0, \"Insulin\": 0, \"BMI\": -0.0, \"DiabetesPedigreeFunction\": 0.078, \"Age\": 21, \"Outcome\": 0}, \"maxValues\": {\"Pregnancies\": 17, \"Glucose\": 199, \"BloodPressure\": 122, \"SkinThickness\": 99, \"Insulin\": 846, \"BMI\": 67.1, \"DiabetesPedigreeFunction\": 2.42, \"Age\": 81, \"Outcome\": 1}, \"nullCount\": {\"Pregnancies\": 0, \"Glucose\": 0, \"BloodPressure\": 0, \"SkinThickness\": 0, \"Insulin\": 0, \"BMI\": 0, \"DiabetesPedigreeFunction\": 0, \"Age\": 0, \"Outcome\": 0}}",
+        "tags": null,
+        "deletionVector": null
+    }
+}
+{
+    "commitInfo": {
+        "timestamp": 1698048346628,
+        "operation": "CREATE TABLE",
+        "operationParameters": {
+            "mode": "ErrorIfExists",
+            "metadata": "{\"configuration\":{},\"created_time\":1698048346628,\"description\":null,\"format\":{\"options\":{},\"provider\":\"parquet\"},\"id\":\"6c8e0484-a9ea-4ed3-9594-aea79b474a63\",\"name\":null,\"partition_columns\":[],\"schema\":{\"fields\":[{\"metadata\":{},\"name\":\"Pregnancies\",\"nullable\":true,\"type\":\"long\"},{\"metadata\":{},\"name\":\"Glucose\",\"nullable\":true,\"type\":\"long\"},{\"metadata\":{},\"name\":\"BloodPressure\",\"nullable\":true,\"type\":\"long\"},{\"metadata\":{},\"name\":\"SkinThickness\",\"nullable\":true,\"type\":\"long\"},{\"metadata\":{},\"name\":\"Insulin\",\"nullable\":true,\"type\":\"long\"},{\"metadata\":{},\"name\":\"BMI\",\"nullable\":true,\"type\":\"double\"},{\"metadata\":{},\"name\":\"DiabetesPedigreeFunction\",\"nullable\":true,\"type\":\"double\"},{\"metadata\":{},\"name\":\"Age\",\"nullable\":true,\"type\":\"long\"},{\"metadata\":{},\"name\":\"Outcome\",\"nullable\":true,\"type\":\"long\"}],\"type\":\"struct\"}}",
+            "location": "file:///home/dunghoang300699/Downloads/mlops/module2/feature-store/data/diabetes-deltalake/diabetes",
+            "protocol": "{\"minReaderVersion\":1,\"minWriterVersion\":1}"
+        },
+        "clientVersion": "delta-rs.0.15.0"
+    }
+}
