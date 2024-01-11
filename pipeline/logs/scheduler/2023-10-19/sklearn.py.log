@@ -1,0 +1,210 @@
+[2023-10-19T04:16:47.305+0000] {processor.py:157} INFO - Started process (PID=36) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:16:47.307+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:16:47.310+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:16:47.310+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:16:47.838+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:16:47.891+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:16:47.891+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:16:47.913+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:16:47.913+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:16:47.950+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.650 seconds
+[2023-10-19T04:17:18.625+0000] {processor.py:157} INFO - Started process (PID=55) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:17:18.630+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:17:18.637+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:17:18.636+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:17:18.907+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:17:18.933+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:17:18.933+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:17:18.946+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:17:18.946+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:17:18.974+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.363 seconds
+[2023-10-19T04:17:49.075+0000] {processor.py:157} INFO - Started process (PID=75) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:17:49.077+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:17:49.082+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:17:49.081+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:17:49.372+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:17:49.397+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:17:49.397+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:17:49.417+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:17:49.417+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:17:49.435+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.374 seconds
+[2023-10-19T04:18:19.521+0000] {processor.py:157} INFO - Started process (PID=95) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:18:19.523+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:18:19.526+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:18:19.525+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:18:19.811+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:18:19.836+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:18:19.836+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:18:19.849+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:18:19.849+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:18:19.879+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.363 seconds
+[2023-10-19T04:18:49.931+0000] {processor.py:157} INFO - Started process (PID=115) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:18:49.932+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:18:49.935+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:18:49.935+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:18:50.215+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:18:50.241+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:18:50.241+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:18:50.255+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:18:50.255+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:18:50.284+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.358 seconds
+[2023-10-19T04:19:21.235+0000] {processor.py:157} INFO - Started process (PID=135) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:19:21.238+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:19:21.242+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:19:21.241+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:19:21.512+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:19:21.537+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:19:21.537+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:19:21.551+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:19:21.551+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:19:21.579+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.352 seconds
+[2023-10-19T04:19:51.705+0000] {processor.py:157} INFO - Started process (PID=155) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:19:51.707+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:19:51.711+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:19:51.710+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:19:51.977+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:19:52.004+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:19:52.004+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:19:52.017+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:19:52.017+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:19:52.045+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.349 seconds
+[2023-10-19T04:20:22.906+0000] {processor.py:157} INFO - Started process (PID=175) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:20:22.907+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:20:22.911+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:20:22.910+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:20:23.182+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:20:23.207+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:20:23.207+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:20:23.220+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:20:23.220+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:20:23.249+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.349 seconds
+[2023-10-19T04:20:53.326+0000] {processor.py:157} INFO - Started process (PID=195) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:20:53.328+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:20:53.333+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:20:53.333+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:20:53.640+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:20:53.671+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:20:53.670+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:20:53.690+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:20:53.690+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:20:53.720+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.401 seconds
+[2023-10-19T04:21:24.657+0000] {processor.py:157} INFO - Started process (PID=216) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:21:24.658+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:21:24.662+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:21:24.661+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:21:24.951+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:21:24.977+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:21:24.977+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:21:24.991+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:21:24.991+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:21:25.020+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.367 seconds
+[2023-10-19T04:21:55.390+0000] {processor.py:157} INFO - Started process (PID=236) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:21:55.391+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:21:55.394+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:21:55.393+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:21:55.705+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:21:55.735+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:21:55.735+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:21:55.749+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:21:55.749+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:21:55.768+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.384 seconds
+[2023-10-19T04:22:25.942+0000] {processor.py:157} INFO - Started process (PID=256) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:22:25.945+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:22:25.949+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:22:25.949+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:22:26.257+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:22:26.285+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:22:26.285+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:22:26.300+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:22:26.300+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:22:26.327+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.391 seconds
+[2023-10-19T04:22:56.397+0000] {processor.py:157} INFO - Started process (PID=268) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:22:56.398+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:22:56.401+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:22:56.401+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:22:56.684+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:22:56.712+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:22:56.711+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:22:56.730+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:22:56.730+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:22:56.757+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.364 seconds
+[2023-10-19T04:23:27.654+0000] {processor.py:157} INFO - Started process (PID=288) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:23:27.655+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:23:27.658+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:23:27.658+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:23:27.930+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:23:27.955+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:23:27.954+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:23:27.968+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:23:27.968+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:23:27.998+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.348 seconds
+[2023-10-19T04:23:58.084+0000] {processor.py:157} INFO - Started process (PID=308) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:23:58.087+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:23:58.092+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:23:58.092+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:23:58.365+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:23:58.391+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:23:58.390+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:23:58.404+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:23:58.404+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:23:58.443+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.372 seconds
+[2023-10-19T04:24:28.526+0000] {processor.py:157} INFO - Started process (PID=328) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:24:28.528+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:24:28.535+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:24:28.534+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:24:28.814+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:24:28.841+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:24:28.840+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:24:28.855+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:24:28.855+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:24:28.892+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.374 seconds
+[2023-10-19T04:24:59.007+0000] {processor.py:157} INFO - Started process (PID=348) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:24:59.009+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:24:59.013+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:24:59.013+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:24:59.287+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:24:59.319+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:24:59.319+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:24:59.332+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:24:59.332+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:24:59.361+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.362 seconds
+[2023-10-19T04:25:30.233+0000] {processor.py:157} INFO - Started process (PID=368) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:25:30.237+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:25:30.242+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:25:30.241+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:25:30.529+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:25:30.556+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:25:30.555+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:25:30.569+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:25:30.569+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:25:30.608+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.390 seconds
+[2023-10-19T04:26:01.368+0000] {processor.py:157} INFO - Started process (PID=388) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:26:01.369+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:26:01.372+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:26:01.372+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:26:01.641+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:26:01.667+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:26:01.666+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:26:01.680+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:26:01.680+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:26:01.708+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.344 seconds
+[2023-10-19T04:26:31.808+0000] {processor.py:157} INFO - Started process (PID=408) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:26:31.812+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:26:31.817+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:26:31.817+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:26:32.087+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:26:32.114+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:26:32.114+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:26:32.127+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:26:32.127+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:26:32.158+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.370 seconds
+[2023-10-19T04:27:03.096+0000] {processor.py:157} INFO - Started process (PID=428) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:27:03.097+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:27:03.100+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:27:03.100+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:27:03.375+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:27:03.400+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:27:03.400+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:27:03.419+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:27:03.419+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:27:03.440+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.348 seconds
+[2023-10-19T04:27:33.772+0000] {processor.py:157} INFO - Started process (PID=448) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:27:33.773+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:27:33.777+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:27:33.777+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:27:34.051+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:27:34.078+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:27:34.078+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:27:34.096+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:27:34.096+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:27:34.132+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.366 seconds
+[2023-10-19T04:28:04.175+0000] {processor.py:157} INFO - Started process (PID=468) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:28:04.176+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:28:04.179+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:28:04.179+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:28:04.451+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:28:04.479+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:28:04.478+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:28:04.492+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:28:04.492+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:28:04.510+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.339 seconds
+[2023-10-19T04:28:34.569+0000] {processor.py:157} INFO - Started process (PID=488) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:28:34.570+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:28:34.573+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:28:34.572+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:28:34.848+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:28:34.881+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:28:34.880+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:28:34.897+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:28:34.897+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:28:34.919+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.355 seconds
+[2023-10-19T04:29:05.857+0000] {processor.py:157} INFO - Started process (PID=502) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:29:05.858+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:29:05.861+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:29:05.860+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:29:06.159+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:29:06.185+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:29:06.185+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:29:06.199+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:29:06.199+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:29:06.231+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.379 seconds
+[2023-10-19T04:29:37.047+0000] {processor.py:157} INFO - Started process (PID=520) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:29:37.049+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:29:37.052+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:29:37.052+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:29:37.339+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:29:37.366+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:29:37.366+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:29:37.381+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:29:37.381+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:29:37.414+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.373 seconds
+[2023-10-19T04:30:07.506+0000] {processor.py:157} INFO - Started process (PID=540) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:30:07.508+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:30:07.510+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:30:07.510+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:30:07.825+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:30:07.854+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:30:07.853+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:30:07.867+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:30:07.867+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:30:07.894+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.392 seconds
+[2023-10-19T04:30:38.620+0000] {processor.py:157} INFO - Started process (PID=560) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:30:38.621+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:30:38.624+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:30:38.624+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:30:38.907+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:30:38.935+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:30:38.934+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:30:38.948+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:30:38.948+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:30:38.966+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.351 seconds
+[2023-10-19T04:31:09.009+0000] {processor.py:157} INFO - Started process (PID=580) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T04:31:09.010+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T04:31:09.013+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:31:09.012+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:31:09.374+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T04:31:09.402+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:31:09.401+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:31:09.415+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:31:09.415+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T04:31:09.436+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.431 seconds
+[2023-10-19T06:13:57.994+0000] {processor.py:157} INFO - Started process (PID=114) to work on /opt/airflow/dags/sklearn.py
+[2023-10-19T06:13:57.995+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/sklearn.py for tasks to queue
+[2023-10-19T06:13:57.998+0000] {logging_mixin.py:151} INFO - [2023-10-19T06:13:57.998+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/sklearn.py
+[2023-10-19T06:13:58.270+0000] {processor.py:839} INFO - DAG(s) dict_keys(['sklearn']) retrieved from /opt/airflow/dags/sklearn.py
+[2023-10-19T06:13:58.299+0000] {logging_mixin.py:151} INFO - [2023-10-19T06:13:58.298+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T06:13:58.312+0000] {logging_mixin.py:151} INFO - [2023-10-19T06:13:58.312+0000] {dag.py:3696} INFO - Setting next_dagrun for sklearn to None, run_after=None
+[2023-10-19T06:13:58.341+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sklearn.py took 0.352 seconds

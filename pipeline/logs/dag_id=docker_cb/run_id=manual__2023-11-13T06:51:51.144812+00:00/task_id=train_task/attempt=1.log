@@ -1,0 +1,42 @@
+[2023-11-13T06:51:52.789+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: docker_cb.train_task manual__2023-11-13T06:51:51.144812+00:00 [queued]>
+[2023-11-13T06:51:52.798+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: docker_cb.train_task manual__2023-11-13T06:51:51.144812+00:00 [queued]>
+[2023-11-13T06:51:52.799+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-11-13T06:51:52.810+0000] {taskinstance.py:1380} INFO - Executing <Task(DockerOperator): train_task> on 2023-11-13 06:51:51.144812+00:00
+[2023-11-13T06:51:52.814+0000] {standard_task_runner.py:57} INFO - Started process 321 to run task
+[2023-11-13T06:51:52.819+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'docker_cb', 'train_task', 'manual__2023-11-13T06:51:51.144812+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/catboost/docker.py', '--cfg-path', '/tmp/tmpyiw5yer7']
+[2023-11-13T06:51:52.820+0000] {standard_task_runner.py:85} INFO - Job 8: Subtask train_task
+[2023-11-13T06:51:52.861+0000] {task_command.py:415} INFO - Running <TaskInstance: docker_cb.train_task manual__2023-11-13T06:51:51.144812+00:00 [running]> on host 6aeab96ae916
+[2023-11-13T06:51:52.938+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='docker_cb' AIRFLOW_CTX_TASK_ID='train_task' AIRFLOW_CTX_EXECUTION_DATE='2023-11-13T06:51:51.144812+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-13T06:51:51.144812+00:00'
+[2023-11-13T06:51:52.971+0000] {docker.py:337} INFO - Starting docker container from image dunghoang99/***-cb-stage:0.0.1
+[2023-11-13T06:51:53.024+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 268, in _raise_for_status
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://docker-proxy:2375/v1.43/containers/create?name=***-cb-stage
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 479, in execute
+    return self._run_image()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 342, in _run_image
+    return self._run_image_with_mounts([*self.mounts, tmp_mount], add_tmp_variable=True)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 369, in _run_image_with_mounts
+    self.container = self.cli.create_container(
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/container.py", line 431, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/container.py", line 448, in create_container_from_config
+    return self._result(res, True)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 274, in _result
+    self._raise_for_status(response)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 270, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 400 Client Error for http://docker-proxy:2375/v1.43/containers/create?name=airflow-cb-stage: Bad Request ("invalid mount config for type "bind": bind source path does not exist: /host_mnt/home/dunghoang300699/Downloads/mlops/module2/feature-store/run_env/dags/catboost")
+[2023-11-13T06:51:53.034+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=docker_cb, task_id=train_task, execution_date=20231113T065151, start_date=20231113T065152, end_date=20231113T065153
+[2023-11-13T06:51:53.047+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 8 for task train_task (400 Client Error for http://docker-proxy:2375/v1.43/containers/create?name=airflow-cb-stage: Bad Request ("invalid mount config for type "bind": bind source path does not exist: /host_mnt/home/dunghoang300699/Downloads/mlops/module2/feature-store/run_env/dags/catboost"); 321)
+[2023-11-13T06:51:53.071+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-13T06:51:53.091+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

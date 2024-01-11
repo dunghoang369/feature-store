@@ -1,0 +1,97 @@
+[2023-10-11T04:51:24.232+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: docker.virtualenv_python manual__2023-10-11T04:51:22.858125+00:00 [queued]>
+[2023-10-11T04:51:24.236+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: docker.virtualenv_python manual__2023-10-11T04:51:22.858125+00:00 [queued]>
+[2023-10-11T04:51:24.236+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-10-11T04:51:24.242+0000] {taskinstance.py:1380} INFO - Executing <Task(_PythonVirtualenvDecoratedOperator): virtualenv_python> on 2023-10-11 04:51:22.858125+00:00
+[2023-10-11T04:51:24.247+0000] {standard_task_runner.py:57} INFO - Started process 170 to run task
+[2023-10-11T04:51:24.249+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'docker', 'virtualenv_python', 'manual__2023-10-11T04:51:22.858125+00:00', '--job-id', '1420', '--raw', '--subdir', 'DAGS_FOLDER/docker.py', '--cfg-path', '/tmp/tmpydw8dspw']
+[2023-10-11T04:51:24.250+0000] {standard_task_runner.py:85} INFO - Job 1420: Subtask virtualenv_python
+[2023-10-11T04:51:24.274+0000] {task_command.py:415} INFO - Running <TaskInstance: docker.virtualenv_python manual__2023-10-11T04:51:22.858125+00:00 [running]> on host 806ac90253f5
+[2023-10-11T04:51:24.310+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='docker' AIRFLOW_CTX_TASK_ID='virtualenv_python' AIRFLOW_CTX_EXECUTION_DATE='2023-10-11T04:51:22.858125+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-11T04:51:22.858125+00:00'
+[2023-10-11T04:51:24.311+0000] {process_utils.py:182} INFO - Executing cmd: /usr/local/bin/python -m virtualenv /tmp/venvn0si58g8
+[2023-10-11T04:51:24.321+0000] {process_utils.py:186} INFO - Output:
+[2023-10-11T04:51:25.096+0000] {process_utils.py:190} INFO - created virtual environment CPython3.8.18.final.0-64 in 277ms
+[2023-10-11T04:51:25.097+0000] {process_utils.py:190} INFO -   creator CPython3Posix(dest=/tmp/venvn0si58g8, clear=False, no_vcs_ignore=False, global=False)
+[2023-10-11T04:51:25.097+0000] {process_utils.py:190} INFO -   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/tmp/tmpdtvw_9g3)
+[2023-10-11T04:51:25.097+0000] {process_utils.py:190} INFO -     added seed packages: pip==23.2, setuptools==68.0.0, wheel==0.40.0
+[2023-10-11T04:51:25.097+0000] {process_utils.py:190} INFO -   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[2023-10-11T04:51:25.121+0000] {process_utils.py:182} INFO - Executing cmd: /tmp/venvn0si58g8/bin/pip install -r /tmp/venvn0si58g8/requirements.txt
+[2023-10-11T04:51:25.130+0000] {process_utils.py:186} INFO - Output:
+[2023-10-11T04:51:25.890+0000] {process_utils.py:190} INFO - WARNING: The directory '/home/***/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+[2023-10-11T04:51:26.101+0000] {process_utils.py:190} INFO - Collecting lightgbm==4.1.0 (from -r /tmp/venvn0si58g8/requirements.txt (line 1))
+[2023-10-11T04:51:26.101+0000] {process_utils.py:190} INFO -   Obtaining dependency information for lightgbm==4.1.0 from https://files.pythonhosted.org/packages/b8/9d/1ce80cee7c5ef60f2fcc7e9fa97f29f7a8de3dc5a08922b3b2f1e9106481/lightgbm-4.1.0-py3-none-manylinux_2_28_x86_64.whl.metadata
+[2023-10-11T04:51:26.240+0000] {process_utils.py:190} INFO -   Downloading lightgbm-4.1.0-py3-none-manylinux_2_28_x86_64.whl.metadata (19 kB)
+[2023-10-11T04:51:26.525+0000] {process_utils.py:190} INFO - Collecting pandas==2.0.3 (from -r /tmp/venvn0si58g8/requirements.txt (line 2))
+[2023-10-11T04:51:26.525+0000] {process_utils.py:190} INFO -   Obtaining dependency information for pandas==2.0.3 from https://files.pythonhosted.org/packages/f8/7f/5b047effafbdd34e52c9e2d7e44f729a0655efafb22198c45cf692cdc157/pandas-2.0.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+[2023-10-11T04:51:26.564+0000] {process_utils.py:190} INFO -   Downloading pandas-2.0.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+[2023-10-11T04:51:26.726+0000] {process_utils.py:190} INFO - Collecting scikit-learn==1.3.1 (from -r /tmp/venvn0si58g8/requirements.txt (line 3))
+[2023-10-11T04:51:26.726+0000] {process_utils.py:190} INFO -   Obtaining dependency information for scikit-learn==1.3.1 from https://files.pythonhosted.org/packages/91/4e/752fd6e0b6b828a9cd815941fb70723eaef5d0f4efd8b9b0eee7864b3511/scikit_learn-1.3.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+[2023-10-11T04:51:26.778+0000] {process_utils.py:190} INFO -   Downloading scikit_learn-1.3.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+[2023-10-11T04:51:27.069+0000] {process_utils.py:190} INFO - Collecting numpy (from lightgbm==4.1.0->-r /tmp/venvn0si58g8/requirements.txt (line 1))
+[2023-10-11T04:51:27.069+0000] {process_utils.py:190} INFO -   Obtaining dependency information for numpy from https://files.pythonhosted.org/packages/98/5d/5738903efe0ecb73e51eb44feafba32bdba2081263d40c5043568ff60faf/numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+[2023-10-11T04:51:27.106+0000] {process_utils.py:190} INFO -   Downloading numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.6 kB)
+[2023-10-11T04:51:27.276+0000] {process_utils.py:190} INFO - Collecting scipy (from lightgbm==4.1.0->-r /tmp/venvn0si58g8/requirements.txt (line 1))
+[2023-10-11T04:51:27.314+0000] {process_utils.py:190} INFO -   Downloading scipy-1.10.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.5 MB)
+[2023-10-11T04:51:30.445+0000] {process_utils.py:190} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.5/34.5 MB 11.7 MB/s eta 0:00:00
+[2023-10-11T04:51:30.602+0000] {process_utils.py:190} INFO - Collecting python-dateutil>=2.8.2 (from pandas==2.0.3->-r /tmp/venvn0si58g8/requirements.txt (line 2))
+[2023-10-11T04:51:30.638+0000] {process_utils.py:190} INFO -   Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+[2023-10-11T04:51:30.660+0000] {process_utils.py:190} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 kB 12.2 MB/s eta 0:00:00
+[2023-10-11T04:51:30.759+0000] {process_utils.py:190} INFO - Collecting pytz>=2020.1 (from pandas==2.0.3->-r /tmp/venvn0si58g8/requirements.txt (line 2))
+[2023-10-11T04:51:30.759+0000] {process_utils.py:190} INFO -   Obtaining dependency information for pytz>=2020.1 from https://files.pythonhosted.org/packages/32/4d/aaf7eff5deb402fd9a24a1449a8119f00d74ae9c2efa79f8ef9994261fc2/pytz-2023.3.post1-py2.py3-none-any.whl.metadata
+[2023-10-11T04:51:30.795+0000] {process_utils.py:190} INFO -   Downloading pytz-2023.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+[2023-10-11T04:51:30.851+0000] {process_utils.py:190} INFO - Collecting tzdata>=2022.1 (from pandas==2.0.3->-r /tmp/venvn0si58g8/requirements.txt (line 2))
+[2023-10-11T04:51:30.889+0000] {process_utils.py:190} INFO -   Downloading tzdata-2023.3-py2.py3-none-any.whl (341 kB)
+[2023-10-11T04:51:30.919+0000] {process_utils.py:190} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 341.8/341.8 kB 12.1 MB/s eta 0:00:00
+[2023-10-11T04:51:31.030+0000] {process_utils.py:190} INFO - Collecting joblib>=1.1.1 (from scikit-learn==1.3.1->-r /tmp/venvn0si58g8/requirements.txt (line 3))
+[2023-10-11T04:51:31.031+0000] {process_utils.py:190} INFO -   Obtaining dependency information for joblib>=1.1.1 from https://files.pythonhosted.org/packages/10/40/d551139c85db202f1f384ba8bcf96aca2f329440a844f924c8a0040b6d02/joblib-1.3.2-py3-none-any.whl.metadata
+[2023-10-11T04:51:31.067+0000] {process_utils.py:190} INFO -   Downloading joblib-1.3.2-py3-none-any.whl.metadata (5.4 kB)
+[2023-10-11T04:51:31.112+0000] {process_utils.py:190} INFO - Collecting threadpoolctl>=2.0.0 (from scikit-learn==1.3.1->-r /tmp/venvn0si58g8/requirements.txt (line 3))
+[2023-10-11T04:51:31.112+0000] {process_utils.py:190} INFO -   Obtaining dependency information for threadpoolctl>=2.0.0 from https://files.pythonhosted.org/packages/81/12/fd4dea011af9d69e1cad05c75f3f7202cdcbeac9b712eea58ca779a72865/threadpoolctl-3.2.0-py3-none-any.whl.metadata
+[2023-10-11T04:51:31.148+0000] {process_utils.py:190} INFO -   Downloading threadpoolctl-3.2.0-py3-none-any.whl.metadata (10.0 kB)
+[2023-10-11T04:51:31.226+0000] {process_utils.py:190} INFO - Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.0.3->-r /tmp/venvn0si58g8/requirements.txt (line 2))
+[2023-10-11T04:51:31.263+0000] {process_utils.py:190} INFO -   Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+[2023-10-11T04:51:31.344+0000] {process_utils.py:190} INFO - Downloading lightgbm-4.1.0-py3-none-manylinux_2_28_x86_64.whl (3.1 MB)
+[2023-10-11T04:51:31.606+0000] {process_utils.py:190} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 11.7 MB/s eta 0:00:00
+[2023-10-11T04:51:31.644+0000] {process_utils.py:190} INFO - Downloading pandas-2.0.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.4 MB)
+[2023-10-11T04:51:32.877+0000] {process_utils.py:190} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 9.7 MB/s eta 0:00:00
+[2023-10-11T04:51:32.918+0000] {process_utils.py:190} INFO - Downloading scikit_learn-1.3.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.1 MB)
+[2023-10-11T04:51:34.057+0000] {process_utils.py:190} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.1/11.1 MB 9.7 MB/s eta 0:00:00
+[2023-10-11T04:51:34.107+0000] {process_utils.py:190} INFO - Downloading joblib-1.3.2-py3-none-any.whl (302 kB)
+[2023-10-11T04:51:34.133+0000] {process_utils.py:190} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 302.2/302.2 kB 12.4 MB/s eta 0:00:00
+[2023-10-11T04:51:34.172+0000] {process_utils.py:190} INFO - Downloading numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+[2023-10-11T04:51:35.881+0000] {process_utils.py:190} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 10.3 MB/s eta 0:00:00
+[2023-10-11T04:51:35.937+0000] {process_utils.py:190} INFO - Downloading pytz-2023.3.post1-py2.py3-none-any.whl (502 kB)
+[2023-10-11T04:51:35.983+0000] {process_utils.py:190} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 502.5/502.5 kB 11.2 MB/s eta 0:00:00
+[2023-10-11T04:51:36.027+0000] {process_utils.py:190} INFO - Downloading threadpoolctl-3.2.0-py3-none-any.whl (15 kB)
+[2023-10-11T04:51:36.240+0000] {process_utils.py:190} INFO - Installing collected packages: pytz, tzdata, threadpoolctl, six, numpy, joblib, scipy, python-dateutil, scikit-learn, pandas, lightgbm
+[2023-10-11T04:51:42.898+0000] {process_utils.py:190} INFO - Successfully installed joblib-1.3.2 lightgbm-4.1.0 numpy-1.24.4 pandas-2.0.3 python-dateutil-2.8.2 pytz-2023.3.post1 scikit-learn-1.3.1 scipy-1.10.1 six-1.16.0 threadpoolctl-3.2.0 tzdata-2023.3
+[2023-10-11T04:51:43.072+0000] {process_utils.py:190} INFO - 
+[2023-10-11T04:51:43.072+0000] {process_utils.py:190} INFO - [notice] A new release of pip is available: 23.2 -> 23.2.1
+[2023-10-11T04:51:43.073+0000] {process_utils.py:190} INFO - [notice] To update, run: python -m pip install --upgrade pip
+[2023-10-11T04:51:43.162+0000] {process_utils.py:182} INFO - Executing cmd: /tmp/venvn0si58g8/bin/python /tmp/venvn0si58g8/script.py /tmp/venvn0si58g8/script.in /tmp/venvn0si58g8/script.out /tmp/venvn0si58g8/string_args.txt /tmp/venvn0si58g8/termination.log
+[2023-10-11T04:51:43.173+0000] {process_utils.py:186} INFO - Output:
+[2023-10-11T04:51:43.880+0000] {process_utils.py:190} INFO - Loading data...
+[2023-10-11T04:51:43.881+0000] {process_utils.py:190} INFO - Traceback (most recent call last):
+[2023-10-11T04:51:43.881+0000] {process_utils.py:190} INFO -   File "/tmp/venvn0si58g8/script.py", line 88, in <module>
+[2023-10-11T04:51:43.881+0000] {process_utils.py:190} INFO -     res = train_task(*arg_dict["args"], **arg_dict["kwargs"])
+[2023-10-11T04:51:43.881+0000] {process_utils.py:190} INFO -   File "/tmp/venvn0si58g8/script.py", line 34, in train_task
+[2023-10-11T04:51:43.881+0000] {process_utils.py:190} INFO -     os.path.join(regression_example_dir, "regression.train"),
+[2023-10-11T04:51:43.881+0000] {process_utils.py:190} INFO - NameError: name 'os' is not defined
+[2023-10-11T04:51:44.250+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/base.py", line 221, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 395, in execute
+    return super().execute(context=serializable_context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 602, in execute_callable
+    result = self._execute_python_callable_in_subprocess(python_path, tmp_path)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 463, in _execute_python_callable_in_subprocess
+    raise AirflowException(error_msg) from None
+airflow.exceptions.AirflowException: Process returned non-zero exit status 1.
+name 'os' is not defined
+[2023-10-11T04:51:44.252+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=docker, task_id=virtualenv_python, execution_date=20231011T045122, start_date=20231011T045124, end_date=20231011T045144
+[2023-10-11T04:51:44.259+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 1420 for task virtualenv_python (Process returned non-zero exit status 1.
+name 'os' is not defined; 170)
+[2023-10-11T04:51:44.293+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-10-11T04:51:44.303+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

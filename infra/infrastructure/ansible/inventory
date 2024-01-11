@@ -1,0 +1,2 @@
+[servers]
+35.202.131.184 ansible_ssh_private_key_file=/home/dunghoang300699/.ssh/id_rsa

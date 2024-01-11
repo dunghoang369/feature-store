@@ -1,0 +1,17 @@
+[2023-10-11T04:37:21.037+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: docker.system_maintenance_task manual__2023-10-11T04:37:20.668475+00:00 [queued]>
+[2023-10-11T04:37:21.043+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: docker.system_maintenance_task manual__2023-10-11T04:37:20.668475+00:00 [queued]>
+[2023-10-11T04:37:21.044+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-10-11T04:37:21.054+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): system_maintenance_task> on 2023-10-11 04:37:20.668475+00:00
+[2023-10-11T04:37:21.061+0000] {standard_task_runner.py:57} INFO - Started process 287 to run task
+[2023-10-11T04:37:21.064+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'docker', 'system_maintenance_task', 'manual__2023-10-11T04:37:20.668475+00:00', '--job-id', '1405', '--raw', '--subdir', 'DAGS_FOLDER/docker.py', '--cfg-path', '/tmp/tmp9lv_561m']
+[2023-10-11T04:37:21.064+0000] {standard_task_runner.py:85} INFO - Job 1405: Subtask system_maintenance_task
+[2023-10-11T04:37:21.093+0000] {task_command.py:415} INFO - Running <TaskInstance: docker.system_maintenance_task manual__2023-10-11T04:37:20.668475+00:00 [running]> on host 1e16ce4c9e98
+[2023-10-11T04:37:21.146+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='docker' AIRFLOW_CTX_TASK_ID='system_maintenance_task' AIRFLOW_CTX_EXECUTION_DATE='2023-10-11T04:37:20.668475+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-11T04:37:20.668475+00:00'
+[2023-10-11T04:37:21.146+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-10-11T04:37:21.147+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "Clean up misc files..."']
+[2023-10-11T04:37:21.162+0000] {subprocess.py:86} INFO - Output:
+[2023-10-11T04:37:21.163+0000] {subprocess.py:93} INFO - Clean up misc files...
+[2023-10-11T04:37:21.163+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-10-11T04:37:21.181+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=docker, task_id=system_maintenance_task, execution_date=20231011T043720, start_date=20231011T043721, end_date=20231011T043721
+[2023-10-11T04:37:21.235+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-10-11T04:37:21.251+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

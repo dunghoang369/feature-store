@@ -49,5 +49,5 @@ while j < 1000:
 # Take a look at this for more details: https://delta.io/blog/2022-10-15-version-pandas-dataset/
 write_deltalake(dt, df, mode="append")
 print("Final Delta table:")
-dt2 = DeltaTable("../data/diabetes-deltalake/diabetes_1")
+dt2 = DeltaTable("../../data/diabetes-deltalake/diabetes_1")
 print(dt2.to_pandas())

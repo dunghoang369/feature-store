@@ -1,0 +1,38 @@
+[2023-10-10T18:02:35.779+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gx.gx_validate_pg manual__2023-10-10T18:02:30.677392+00:00 [queued]>
+[2023-10-10T18:02:35.783+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gx.gx_validate_pg manual__2023-10-10T18:02:30.677392+00:00 [queued]>
+[2023-10-10T18:02:35.784+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-10-10T18:02:35.790+0000] {taskinstance.py:1380} INFO - Executing <Task(GreatExpectationsOperator): gx_validate_pg> on 2023-10-10 18:02:30.677392+00:00
+[2023-10-10T18:02:35.798+0000] {standard_task_runner.py:57} INFO - Started process 298 to run task
+[2023-10-10T18:02:35.800+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'gx', 'gx_validate_pg', 'manual__2023-10-10T18:02:30.677392+00:00', '--job-id', '1374', '--raw', '--subdir', 'DAGS_FOLDER/gx.py', '--cfg-path', '/tmp/tmppcur5h8w']
+[2023-10-10T18:02:35.801+0000] {standard_task_runner.py:85} INFO - Job 1374: Subtask gx_validate_pg
+[2023-10-10T18:02:35.825+0000] {task_command.py:415} INFO - Running <TaskInstance: gx.gx_validate_pg manual__2023-10-10T18:02:30.677392+00:00 [running]> on host 08721473190e
+[2023-10-10T18:02:35.863+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='gx' AIRFLOW_CTX_TASK_ID='gx_validate_pg' AIRFLOW_CTX_EXECUTION_DATE='2023-10-10T18:02:30.677392+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-10T18:02:30.677392+00:00'
+[2023-10-10T18:02:35.864+0000] {great_expectations.py:551} INFO - Running validation with Great Expectations...
+[2023-10-10T18:02:35.864+0000] {great_expectations.py:553} INFO - Instantiating Data Context...
+[2023-10-10T18:02:35.868+0000] {base.py:73} INFO - Using connection ID 'postgres_default' for task execution.
+[2023-10-10T18:02:35.869+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/data_context/data_context/file_data_context.py", line 198, in _load_file_backed_project_config
+    with open(path_to_yml) as data:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/include/great_expectations/great_expectations.yml'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations_provider/operators/great_expectations.py", line 557, in execute
+    self.data_context = ge.data_context.DataContext(context_root_dir=self.data_context_root_dir)
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/data_context/data_context/data_context.py", line 129, in DataContext
+    project_config = FileDataContext._load_file_backed_project_config(
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/data_context/data_context/file_data_context.py", line 212, in _load_file_backed_project_config
+    raise gx_exceptions.ConfigNotFoundError()
+great_expectations.exceptions.exceptions.ConfigNotFoundError: Error: No gx directory was found here!
+    - Please check that you are in the correct directory or have specified the correct directory.
+    - If you have never run Great Expectations in this project, please run `great_expectations init` to get started.
+
+[2023-10-10T18:02:35.874+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=gx, task_id=gx_validate_pg, execution_date=20231010T180230, start_date=20231010T180235, end_date=20231010T180235
+[2023-10-10T18:02:35.879+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 1374 for task gx_validate_pg (Error: No gx directory was found here!
+    - Please check that you are in the correct directory or have specified the correct directory.
+    - If you have never run Great Expectations in this project, please run `great_expectations init` to get started.
+; 298)
+[2023-10-10T18:02:35.891+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-10-10T18:02:35.905+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,12 @@
+{
+    "name": "devices-sink",
+    "config": {
+        "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+        "tasks.max": "1",
+        "topics": "sink_device_0",
+        "connection.url": "jdbc:postgresql://host.docker.internal:5432/k6",
+        "connection.user": "k6",
+        "connection.password": "k6",
+        "auto.create": true
+    }
+}

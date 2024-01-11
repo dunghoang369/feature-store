@@ -1,0 +1,217 @@
+[2023-10-19T04:16:47.022+0000] {processor.py:157} INFO - Started process (PID=32) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:16:47.024+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:16:47.029+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:16:47.029+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:16:47.045+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:16:47.117+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:16:47.116+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:16:47.137+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:16:47.137+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:16:47.161+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.146 seconds
+[2023-10-19T04:17:17.451+0000] {processor.py:157} INFO - Started process (PID=52) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:17:17.452+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:17:17.455+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:17:17.454+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:17:17.463+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:17:17.496+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:17:17.495+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:17:17.509+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:17:17.509+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:17:17.526+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.079 seconds
+[2023-10-19T04:17:47.911+0000] {processor.py:157} INFO - Started process (PID=72) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:17:47.912+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:17:47.916+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:17:47.915+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:17:47.928+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:17:47.960+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:17:47.959+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:17:47.974+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:17:47.973+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:17:48.002+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.098 seconds
+[2023-10-19T04:18:18.377+0000] {processor.py:157} INFO - Started process (PID=92) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:18:18.378+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:18:18.382+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:18:18.381+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:18:18.392+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:18:18.423+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:18:18.420+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:18:18.440+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:18:18.440+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:18:18.458+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.088 seconds
+[2023-10-19T04:18:48.698+0000] {processor.py:157} INFO - Started process (PID=112) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:18:48.700+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:18:48.703+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:18:48.703+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:18:48.716+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:18:48.751+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:18:48.750+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:18:48.765+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:18:48.765+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:18:48.794+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.108 seconds
+[2023-10-19T04:19:19.055+0000] {processor.py:157} INFO - Started process (PID=132) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:19:19.056+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:19:19.060+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:19:19.060+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:19:19.071+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:19:19.114+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:19:19.113+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:19:19.131+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:19:19.131+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:19:19.150+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.104 seconds
+[2023-10-19T04:19:49.407+0000] {processor.py:157} INFO - Started process (PID=152) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:19:49.408+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:19:49.413+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:19:49.412+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:19:49.428+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:19:49.478+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:19:49.476+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:19:49.501+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:19:49.501+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:19:49.531+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.131 seconds
+[2023-10-19T04:20:19.754+0000] {processor.py:157} INFO - Started process (PID=172) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:20:19.755+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:20:19.757+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:20:19.757+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:20:19.766+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:20:19.807+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:20:19.807+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:20:19.823+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:20:19.823+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:20:19.842+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.092 seconds
+[2023-10-19T04:20:50.073+0000] {processor.py:157} INFO - Started process (PID=192) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:20:50.075+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:20:50.080+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:20:50.079+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:20:50.092+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:20:50.132+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:20:50.131+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:20:50.154+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:20:50.153+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:20:50.186+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.120 seconds
+[2023-10-19T04:21:20.517+0000] {processor.py:157} INFO - Started process (PID=213) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:21:20.518+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:21:20.521+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:21:20.521+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:21:20.531+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:21:20.561+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:21:20.560+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:21:20.575+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:21:20.575+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:21:20.594+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.081 seconds
+[2023-10-19T04:21:50.908+0000] {processor.py:157} INFO - Started process (PID=227) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:21:50.911+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:21:50.917+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:21:50.916+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:21:50.937+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:21:50.993+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:21:50.992+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:21:51.013+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:21:51.012+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:21:51.045+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.144 seconds
+[2023-10-19T04:22:21.744+0000] {processor.py:157} INFO - Started process (PID=245) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:22:21.745+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:22:21.751+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:22:21.750+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:22:21.765+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:22:21.823+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:22:21.822+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:22:21.844+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:22:21.843+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:22:21.882+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.144 seconds
+[2023-10-19T04:22:52.172+0000] {processor.py:157} INFO - Started process (PID=265) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:22:52.173+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:22:52.176+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:22:52.176+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:22:52.186+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:22:52.220+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:22:52.220+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:22:52.235+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:22:52.235+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:22:52.264+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.096 seconds
+[2023-10-19T04:23:22.496+0000] {processor.py:157} INFO - Started process (PID=285) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:23:22.498+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:23:22.501+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:23:22.501+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:23:22.512+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:23:22.542+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:23:22.542+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:23:22.557+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:23:22.556+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:23:22.586+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.095 seconds
+[2023-10-19T04:23:52.884+0000] {processor.py:157} INFO - Started process (PID=305) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:23:52.886+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:23:52.890+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:23:52.890+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:23:52.901+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:23:52.931+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:23:52.930+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:23:52.945+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:23:52.945+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:23:52.974+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.098 seconds
+[2023-10-19T04:24:23.346+0000] {processor.py:157} INFO - Started process (PID=325) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:24:23.349+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:24:23.352+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:24:23.351+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:24:23.362+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:24:23.392+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:24:23.391+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:24:23.407+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:24:23.406+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:24:23.436+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.097 seconds
+[2023-10-19T04:24:53.717+0000] {processor.py:157} INFO - Started process (PID=345) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:24:53.720+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:24:53.726+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:24:53.726+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:24:53.736+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:24:53.767+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:24:53.766+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:24:53.782+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:24:53.781+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:24:53.815+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.110 seconds
+[2023-10-19T04:25:24.017+0000] {processor.py:157} INFO - Started process (PID=365) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:25:24.019+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:25:24.022+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:25:24.022+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:25:24.035+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:25:24.066+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:25:24.066+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:25:24.080+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:25:24.080+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:25:24.109+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.098 seconds
+[2023-10-19T04:25:54.180+0000] {processor.py:157} INFO - Started process (PID=385) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:25:54.181+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:25:54.184+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:25:54.184+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:25:54.195+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:25:54.224+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:25:54.224+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:25:54.238+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:25:54.238+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:25:54.273+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.097 seconds
+[2023-10-19T04:26:24.493+0000] {processor.py:157} INFO - Started process (PID=405) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:26:24.494+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:26:24.498+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:26:24.498+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:26:24.508+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:26:24.544+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:26:24.543+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:26:24.562+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:26:24.562+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:26:24.593+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.105 seconds
+[2023-10-19T04:26:54.905+0000] {processor.py:157} INFO - Started process (PID=425) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:26:54.908+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:26:54.912+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:26:54.912+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:26:54.922+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:26:54.954+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:26:54.954+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:26:54.970+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:26:54.970+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:26:55.002+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.107 seconds
+[2023-10-19T04:27:25.340+0000] {processor.py:157} INFO - Started process (PID=439) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:27:25.342+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:27:25.346+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:27:25.345+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:27:25.357+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:27:25.388+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:27:25.387+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:27:25.401+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:27:25.401+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:27:25.430+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.095 seconds
+[2023-10-19T04:27:55.936+0000] {processor.py:157} INFO - Started process (PID=457) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:27:55.937+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:27:55.940+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:27:55.940+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:27:55.950+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:27:55.982+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:27:55.982+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:27:55.998+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:27:55.998+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:27:56.017+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.086 seconds
+[2023-10-19T04:28:26.310+0000] {processor.py:157} INFO - Started process (PID=477) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:28:26.312+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:28:26.314+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:28:26.314+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:28:26.324+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:28:26.355+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:28:26.354+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:28:26.375+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:28:26.375+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:28:26.400+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.094 seconds
+[2023-10-19T04:28:56.693+0000] {processor.py:157} INFO - Started process (PID=497) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:28:56.695+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:28:56.698+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:28:56.698+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:28:56.708+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:28:56.740+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:28:56.739+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:28:56.755+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:28:56.755+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:28:56.775+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.086 seconds
+[2023-10-19T04:29:26.838+0000] {processor.py:157} INFO - Started process (PID=517) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:29:26.839+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:29:26.842+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:29:26.842+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:29:26.854+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:29:26.890+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:29:26.890+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:29:26.911+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:29:26.910+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:29:26.958+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.125 seconds
+[2023-10-19T04:29:57.195+0000] {processor.py:157} INFO - Started process (PID=537) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:29:57.197+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:29:57.201+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:29:57.200+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:29:57.214+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:29:57.254+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:29:57.253+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:29:57.272+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:29:57.272+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:29:57.298+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.109 seconds
+[2023-10-19T04:30:27.426+0000] {processor.py:157} INFO - Started process (PID=557) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:30:27.427+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:30:27.432+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:30:27.431+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:30:27.441+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:30:27.481+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:30:27.480+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:30:27.495+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:30:27.495+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:30:27.517+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.096 seconds
+[2023-10-19T04:30:57.753+0000] {processor.py:157} INFO - Started process (PID=577) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:30:57.754+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:30:57.758+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:30:57.757+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:30:57.768+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:30:57.798+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:30:57.797+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:30:57.812+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:30:57.811+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:30:57.842+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.093 seconds
+[2023-10-19T04:31:28.095+0000] {processor.py:157} INFO - Started process (PID=597) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:31:28.097+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T04:31:28.101+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:31:28.100+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:31:28.116+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T04:31:28.164+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:31:28.163+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T04:31:28.198+0000] {logging_mixin.py:151} INFO - [2023-10-19T04:31:28.197+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T04:31:28.336+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.246 seconds
+[2023-10-19T06:13:57.765+0000] {processor.py:157} INFO - Started process (PID=110) to work on /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T06:13:57.766+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/lightgbm/docker.py for tasks to queue
+[2023-10-19T06:13:57.769+0000] {logging_mixin.py:151} INFO - [2023-10-19T06:13:57.769+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T06:13:57.779+0000] {processor.py:839} INFO - DAG(s) dict_keys(['docker']) retrieved from /opt/airflow/dags/lightgbm/docker.py
+[2023-10-19T06:13:57.836+0000] {logging_mixin.py:151} INFO - [2023-10-19T06:13:57.835+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-19T06:13:57.850+0000] {logging_mixin.py:151} INFO - [2023-10-19T06:13:57.850+0000] {dag.py:3696} INFO - Setting next_dagrun for docker to None, run_after=None
+[2023-10-19T06:13:57.868+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/lightgbm/docker.py took 0.107 seconds

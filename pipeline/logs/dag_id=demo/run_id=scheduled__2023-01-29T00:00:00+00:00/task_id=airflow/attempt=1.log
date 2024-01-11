@@ -1,0 +1,14 @@
+[2023-10-27T05:45:46.892+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demo.airflow scheduled__2023-01-29T00:00:00+00:00 [queued]>
+[2023-10-27T05:45:46.919+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demo.airflow scheduled__2023-01-29T00:00:00+00:00 [queued]>
+[2023-10-27T05:45:46.922+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-10-27T05:45:46.949+0000] {taskinstance.py:1380} INFO - Executing <Task(_PythonDecoratedOperator): airflow> on 2023-01-29 00:00:00+00:00
+[2023-10-27T05:45:46.963+0000] {standard_task_runner.py:57} INFO - Started process 3538 to run task
+[2023-10-27T05:45:46.973+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'demo', '***', 'scheduled__2023-01-29T00:00:00+00:00', '--job-id', '811', '--raw', '--subdir', 'DAGS_FOLDER/demo.py', '--cfg-path', '/tmp/tmpj2gj67m5']
+[2023-10-27T05:45:46.975+0000] {standard_task_runner.py:85} INFO - Job 811: Subtask ***
+[2023-10-27T05:45:47.090+0000] {task_command.py:415} INFO - Running <TaskInstance: demo.airflow scheduled__2023-01-29T00:00:00+00:00 [running]> on host a533f90042c9
+[2023-10-27T05:45:47.270+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='demo' AIRFLOW_CTX_TASK_ID='***' AIRFLOW_CTX_EXECUTION_DATE='2023-01-29T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-29T00:00:00+00:00'
+[2023-10-27T05:45:47.272+0000] {logging_mixin.py:151} INFO - ***
+[2023-10-27T05:45:47.275+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-10-27T05:45:47.287+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=demo, task_id=***, execution_date=20230129T000000, start_date=20231027T054546, end_date=20231027T054547
+[2023-10-27T05:45:47.351+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-10-27T05:45:47.449+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

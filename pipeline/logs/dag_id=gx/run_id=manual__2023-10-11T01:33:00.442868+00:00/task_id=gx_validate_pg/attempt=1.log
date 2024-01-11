@@ -1,0 +1,159 @@
+[2023-10-11T01:33:05.476+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gx.gx_validate_pg manual__2023-10-11T01:33:00.442868+00:00 [queued]>
+[2023-10-11T01:33:05.480+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gx.gx_validate_pg manual__2023-10-11T01:33:00.442868+00:00 [queued]>
+[2023-10-11T01:33:05.481+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-10-11T01:33:05.487+0000] {taskinstance.py:1380} INFO - Executing <Task(GreatExpectationsOperator): gx_validate_pg> on 2023-10-11 01:33:00.442868+00:00
+[2023-10-11T01:33:05.494+0000] {standard_task_runner.py:57} INFO - Started process 1116 to run task
+[2023-10-11T01:33:05.497+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'gx', 'gx_validate_pg', 'manual__2023-10-11T01:33:00.442868+00:00', '--job-id', '1385', '--raw', '--subdir', 'DAGS_FOLDER/gx.py', '--cfg-path', '/tmp/tmpxwbb4mmb']
+[2023-10-11T01:33:05.497+0000] {standard_task_runner.py:85} INFO - Job 1385: Subtask gx_validate_pg
+[2023-10-11T01:33:05.522+0000] {task_command.py:415} INFO - Running <TaskInstance: gx.gx_validate_pg manual__2023-10-11T01:33:00.442868+00:00 [running]> on host 08721473190e
+[2023-10-11T01:33:05.559+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='gx' AIRFLOW_CTX_TASK_ID='gx_validate_pg' AIRFLOW_CTX_EXECUTION_DATE='2023-10-11T01:33:00.442868+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-11T01:33:00.442868+00:00'
+[2023-10-11T01:33:05.560+0000] {great_expectations.py:551} INFO - Running validation with Great Expectations...
+[2023-10-11T01:33:05.560+0000] {great_expectations.py:553} INFO - Instantiating Data Context...
+[2023-10-11T01:33:05.564+0000] {base.py:73} INFO - Using connection ID 'postgres_default' for task execution.
+[2023-10-11T01:33:05.583+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/great_expectations/data_context/data_context/base_data_context.py:158: DeprecationWarning: DataContext and BaseDataContext are deprecated as of v0.17.10 and will be removed in v0.20. Please use gx.get_context instead.
+  warnings.warn(
+
+[2023-10-11T01:33:05.585+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/great_expectations/data_context/data_context/serializable_data_context.py:226: UserWarning: Warning. An existing `great_expectations.yml` was found here: /opt/***/include/gx.
+    - No action was taken.
+  warnings.warn(message)
+
+[2023-10-11T01:33:05.586+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/great_expectations/data_context/data_context/serializable_data_context.py:236: UserWarning: Warning. An existing `config_variables.yml` was found here: /opt/***/include/gx/uncommitted.
+    - No action was taken.
+  warnings.warn(message)
+
+[2023-10-11T01:33:05.589+0000] {file_data_context.py:224} INFO - FileDataContext loading fluent config
+[2023-10-11T01:33:05.590+0000] {config.py:185} INFO - Loading 'datasources' ->
+[]
+[2023-10-11T01:33:05.628+0000] {great_expectations.py:566} INFO - Creating Checkpoint...
+[2023-10-11T01:33:05.630+0000] {great_expectations.py:585} INFO - Running Checkpoint...
+[2023-10-11T01:33:05.641+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "172.17.0.1", port 5433 failed: FATAL:  database "public" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations_provider/operators/great_expectations.py", line 588, in execute
+    result = self.checkpoint.run(batch_request=self.batch_request)
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/core/usage_statistics/usage_statistics.py", line 260, in usage_statistics_wrapped_method
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/checkpoint/checkpoint.py", line 315, in run
+    self._run_validation(
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/checkpoint/checkpoint.py", line 480, in _run_validation
+    validator: Validator = self._validator or self.data_context.get_validator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/data_context/data_context/abstract_data_context.py", line 2482, in get_validator
+    self.get_batch_list(
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/core/usage_statistics/usage_statistics.py", line 260, in usage_statistics_wrapped_method
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/data_context/data_context/abstract_data_context.py", line 2651, in get_batch_list
+    return self._get_batch_list(
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/data_context/data_context/abstract_data_context.py", line 2732, in _get_batch_list
+    return datasource.get_batch_list_from_batch_request(batch_request=result)
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/datasource/new_datasource.py", line 218, in get_batch_list_from_batch_request
+    ) = data_connector.get_batch_data_and_metadata(
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/datasource/data_connector/data_connector.py", line 121, in get_batch_data_and_metadata
+    batch_data, batch_markers = self._execution_engine.get_batch_data_and_markers(
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/execution_engine/sqlalchemy_execution_engine.py", line 1388, in get_batch_data_and_markers
+    batch_data = SqlAlchemyBatchData(
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/execution_engine/sqlalchemy_batch_data.py", line 181, in __init__
+    self._selectable = self._generate_selectable_from_selectable(
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/execution_engine/sqlalchemy_batch_data.py", line 417, in _generate_selectable_from_selectable
+    _, temp_table_name = self._create_temporary_table(
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/execution_engine/sqlalchemy_batch_data.py", line 311, in _create_temporary_table
+    self.execution_engine.execute_query_in_transaction(sa.text(stmt))
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/execution_engine/sqlalchemy_execution_engine.py", line 1469, in execute_query_in_transaction
+    with self.get_connection() as connection:
+  File "/usr/local/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/home/airflow/.local/lib/python3.8/site-packages/great_expectations/execution_engine/sqlalchemy_execution_engine.py", line 1433, in get_connection
+    with self.engine.connect() as connection:
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "172.17.0.1", port 5433 failed: FATAL:  database "public" does not exist
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-10-11T01:33:05.651+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=gx, task_id=gx_validate_pg, execution_date=20231011T013300, start_date=20231011T013305, end_date=20231011T013305
+[2023-10-11T01:33:05.657+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 1385 for task gx_validate_pg ((psycopg2.OperationalError) connection to server at "172.17.0.1", port 5433 failed: FATAL:  database "public" does not exist
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 1116)
+[2023-10-11T01:33:05.708+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-10-11T01:33:05.724+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

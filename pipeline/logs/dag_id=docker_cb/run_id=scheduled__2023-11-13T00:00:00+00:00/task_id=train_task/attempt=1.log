@@ -1,0 +1,71 @@
+[2023-11-14T04:49:10.180+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: docker_cb.train_task scheduled__2023-11-13T00:00:00+00:00 [queued]>
+[2023-11-14T04:49:10.193+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: docker_cb.train_task scheduled__2023-11-13T00:00:00+00:00 [queued]>
+[2023-11-14T04:49:10.194+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-11-14T04:49:10.215+0000] {taskinstance.py:1380} INFO - Executing <Task(DockerOperator): train_task> on 2023-11-13 00:00:00+00:00
+[2023-11-14T04:49:10.221+0000] {standard_task_runner.py:57} INFO - Started process 63 to run task
+[2023-11-14T04:49:10.231+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'docker_cb', 'train_task', 'scheduled__2023-11-13T00:00:00+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/catboost/docker.py', '--cfg-path', '/tmp/tmpx7du7xzw']
+[2023-11-14T04:49:10.232+0000] {standard_task_runner.py:85} INFO - Job 17: Subtask train_task
+[2023-11-14T04:49:10.292+0000] {task_command.py:415} INFO - Running <TaskInstance: docker_cb.train_task scheduled__2023-11-13T00:00:00+00:00 [running]> on host 184a7c5917fb
+[2023-11-14T04:49:10.384+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='docker_cb' AIRFLOW_CTX_TASK_ID='train_task' AIRFLOW_CTX_EXECUTION_DATE='2023-11-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-13T00:00:00+00:00'
+[2023-11-14T04:49:10.480+0000] {docker.py:337} INFO - Starting docker container from image dunghoang99/***-cb-stage:0.0.1
+[2023-11-14T04:49:10.497+0000] {docker.py:345} WARNING - Using remote engine or docker-in-docker and mounting temporary volume from host is not supported. Falling back to `mount_tmp_dir=False` mode. You can set `mount_tmp_dir` parameter to False to disable mounting and remove the warning
+[2023-11-14T04:49:10.521+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 268, in _raise_for_status
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://docker-proxy:2375/v1.43/containers/create?name=***-cb-stage
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 342, in _run_image
+    return self._run_image_with_mounts([*self.mounts, tmp_mount], add_tmp_variable=True)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 369, in _run_image_with_mounts
+    self.container = self.cli.create_container(
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/container.py", line 431, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/container.py", line 448, in create_container_from_config
+    return self._result(res, True)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 274, in _result
+    self._raise_for_status(response)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 270, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 400 Client Error for http://docker-proxy:2375/v1.43/containers/create?name=airflow-cb-stage: Bad Request ("invalid mount config for type "bind": bind source path does not exist: /tmp/airflowtmp85bm6ixf")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 268, in _raise_for_status
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: http://docker-proxy:2375/v1.43/containers/create?name=***-cb-stage
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 479, in execute
+    return self._run_image()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 351, in _run_image
+    return self._run_image_with_mounts(self.mounts, add_tmp_variable=False)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 369, in _run_image_with_mounts
+    self.container = self.cli.create_container(
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/container.py", line 431, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/container.py", line 448, in create_container_from_config
+    return self._result(res, True)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 274, in _result
+    self._raise_for_status(response)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 270, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 409 Client Error for http://docker-proxy:2375/v1.43/containers/create?name=airflow-cb-stage: Conflict ("Conflict. The container name "/airflow-cb-stage" is already in use by container "a7b212ca434e56c2cacce5d30a8151cbf7fb4db8353d9e5e9d9463639ea883d8". You have to remove (or rename) that container to be able to reuse that name.")
+[2023-11-14T04:49:10.553+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=docker_cb, task_id=train_task, execution_date=20231113T000000, start_date=20231114T044910, end_date=20231114T044910
+[2023-11-14T04:49:10.659+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 17 for task train_task (409 Client Error for http://docker-proxy:2375/v1.43/containers/create?name=airflow-cb-stage: Conflict ("Conflict. The container name "/airflow-cb-stage" is already in use by container "a7b212ca434e56c2cacce5d30a8151cbf7fb4db8353d9e5e9d9463639ea883d8". You have to remove (or rename) that container to be able to reuse that name."); 63)
+[2023-11-14T04:49:10.688+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-14T04:49:10.708+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

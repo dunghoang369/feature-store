@@ -1,0 +1,29 @@
+[2023-11-12T15:19:42.781+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: docker_cb.train_task manual__2023-11-12T15:19:41.603898+00:00 [queued]>
+[2023-11-12T15:19:42.790+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: docker_cb.train_task manual__2023-11-12T15:19:41.603898+00:00 [queued]>
+[2023-11-12T15:19:42.791+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-11-12T15:19:42.803+0000] {taskinstance.py:1380} INFO - Executing <Task(DockerOperator): train_task> on 2023-11-12 15:19:41.603898+00:00
+[2023-11-12T15:19:42.808+0000] {standard_task_runner.py:57} INFO - Started process 98 to run task
+[2023-11-12T15:19:42.812+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'docker_cb', 'train_task', 'manual__2023-11-12T15:19:41.603898+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/catboost/docker.py', '--cfg-path', '/tmp/tmp4m3c0xwe']
+[2023-11-12T15:19:42.814+0000] {standard_task_runner.py:85} INFO - Job 4: Subtask train_task
+[2023-11-12T15:19:42.858+0000] {task_command.py:415} INFO - Running <TaskInstance: docker_cb.train_task manual__2023-11-12T15:19:41.603898+00:00 [running]> on host 1905040b710e
+[2023-11-12T15:19:42.931+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='docker_cb' AIRFLOW_CTX_TASK_ID='train_task' AIRFLOW_CTX_EXECUTION_DATE='2023-11-12T15:19:41.603898+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-12T15:19:41.603898+00:00'
+[2023-11-12T15:19:42.960+0000] {docker.py:337} INFO - Starting docker container from image dunghoang99/***-cb-stage:0.0.1
+[2023-11-12T15:19:43.007+0000] {docker.py:345} WARNING - Using remote engine or docker-in-docker and mounting temporary volume from host is not supported. Falling back to `mount_tmp_dir=False` mode. You can set `mount_tmp_dir` parameter to False to disable mounting and remove the warning
+[2023-11-12T15:19:44.287+0000] {docker.py:406} INFO - Data train: X_train shape (10099, 8), y_train shape (10099,)
+Data test: X_test shape (1123, 8), y_test shape (1123,)
+0:	learn: 0.6925686	total: 47.5ms	remaining: 0us
+Accuracy: 0.55209
+Precision: 0.55771
+Recall: 0.84754
+Fbeta_score: 0.77998
+              precision    recall  f1-score   support
+
+           0       0.53      0.20      0.29       513
+           1       0.56      0.85      0.67       610
+
+    accuracy                           0.55      1123
+   macro avg       0.54      0.52      0.48      1123
+weighted avg       0.54      0.55      0.50      1123
+[2023-11-12T15:19:44.563+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=docker_cb, task_id=train_task, execution_date=20231112T151941, start_date=20231112T151942, end_date=20231112T151944
+[2023-11-12T15:19:44.595+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-12T15:19:44.617+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
